@@ -277,10 +277,100 @@ function questOptions(){
 function takeDamage(){
 	return damageTaken = Math.floor((playerLevel * fibonacci(1))/2);
 }
+
 function fibonacci(nth){
 	if (nth == 1 || nth == 2){
 		return 1;
 	}else{
 		return fibonacci(nth-1) + fibonacci(nth-2);
+	}
+}
+
+var resourceQuests = {
+	"questOne" : {
+		"questName" : "Gather food";
+		"questObjective" : "Some text";
+		"questResult" : "Some text";
+		"questXp" : 50;
+		"questGold" : 20;
+		"chanceOfDamage" : 5;
+	},
+	"questTwo" : {
+		"questName" : "Gather water";
+		"questObjective" : "Some text";
+		"questResult" : "Some text";
+		"questXp" : 75;
+		"questGold" : 35;
+		"chanceOfDamage" : 10;
+	},
+	"questThree" : {
+		"questName" : "Gather wood";
+		"questObjective" : "Some text";
+		"questResult" : "Some text";
+		"questXp" : 100;
+		"questGold" : 50;
+		"chanceOfDamage" : 15;
+	},
+	"questFour" : {
+		"questName" : "Build weapon";
+		"questObjective" : "Some text";
+		"questResult" : "Some text";
+		"questXp" : 125;
+		"questGold" : 75;
+		"chanceOfDamage" : 35;
+	},
+	"questFive" : {
+		"questName" : "Gather information";
+		"questObjective" : "Some text";
+		"questResult" : "Some text";
+		"questXp" : 200;
+		"questGold" : 150;
+		"chanceOfDamage" : 50;
+	},
+	"questSix" : {
+		"questName" : "Final Plan";
+		"questObjective" : "Some text";
+		"questResult" : "Some text";
+		"questXp" : 350;
+		"questGold" : 275;
+		"chanceOfDamage" : 35;
+	}
+};
+
+var fightingQuests = {
+	"questOne" : {
+		"questName" : "The training begins...";
+		"questObjective" : "Some text";
+		"questResult" : "Some text";
+		"questXp" : 50;
+		"questGold" : 50;
+		"chanceOfDamage" : 5;
+	},
+	"questTwo" : {
+		"questName" : "Kill the boar!";
+		"questObjective" : "Some text";
+		"questResult" : "Some text";
+		"questXp" : 75;
+		"questGold" : 75;
+		"chanceOfDamage" : 10;
+	},
+	"questThree" : {
+		"questName" : "A new opponent arrives";
+		"questObjective" : "Some text";
+		"questResult" : "Some text";
+		"questXp" : 100;
+		"questGold" : 150;
+		"chanceOfDamage" : 20;
+	},
+	"questFour" : {
+		"questName" : "Get to the choppa!";
+		"questObjective" : "Some text";
+		"questResult" : "Some text";
+		"questXp" : 150;
+		"questGold" : 250;
+		"chanceOfDamage" : 35;
+	},
+	"questFive" : {
+		"questName" : ""
 	}
 }
