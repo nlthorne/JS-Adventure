@@ -185,11 +185,11 @@ function introduction(){
 function choosePath(){
 	let user = prompt("Enter a username: ");
 	user = new Player(user);
-	var choice = prompt("Choose a path " + user.name + ": \n\nCowboy \nNinja \nAlien")
+	var choice = prompt("Choose a path " + user.name + ": \n\nCowboy \nNinja \nAlien");
+	confirmChoice(choice);
 	switch(choice.toLowerCase()){
 		case "cowboy":
 		Object.assign(new cowboy(user));
-		//storyline(Object.assign(new cowboy(user)));
 		storyline(user);
 		break;
 		
@@ -269,30 +269,41 @@ function Player(name){
 // Classes
 function cowboy(user){
 	this.name = "Cowboy";
+	this.description = "Cowboy description \n\nAttributes: \n-5 to short range \n+10 to long range";
 	user.depleteShortRange(5);
 	user.addLongRange(10);
 }
 
 function ninja(user){
 	this.name = "Ninja";
+	this.description = "Ninja description \n\nAttributes: \n+10 to short range \n-5 to long range";
 	user.addShortRange(10);
 	user.depleteLongRange(5);
 }
 
 function alien(user){
 	this.name = "Alien";
+	this.description = "Alien description \n\nAttributes: \n+10 to player health";
 	user.addHealth(10);
 }
 
 function storyline(player1){
-	var result = player1.name + "\n";
-	result += quests[0].questName;
-	alert(result);
+	var completedQuests = [];
+	var availableQuests = [];
+	if(var i=0; i < quests.length; i++){
+		if(quests[i].questClass == "Fighting"){
+			return quests[i];
+		}
+		else if (quests[i].questClass == "Resources"){
+			return quests[i];
+		}
+	}
+	alert(quests[0].questXp);
 }
 // Sub-Classes
 function chooseSubClass(user){
 	var choice = alert("You are now a warrior! \nYou can now increase your skills.");
-	chooseSubClass(user);
+	retrieveSubClass(user);
 	switch(choice.toLowerCase()){
 		case 1:
 		//choice method here
@@ -309,7 +320,7 @@ function chooseSubClass(user){
 	}
 }
 
-function chooseSubClass(user){
+function retrieveSubClass(user){
 	var subClassOptions = [];
 	var optionOne;
 	var optionTwo;
@@ -329,105 +340,185 @@ function chooseSubClass(user){
 	return subClassOptions;
 }
 
-function samaruai(ninja, user){
+function samaruai(user){
 	this.name = "Samaruai";
+	this.description = "Samaruai description \n\nAttributes: \n-10 to short range \n+10 to long range";
 	user.depleteShortRange(10);
 	user.addLongRange(10);
 }
 
-function shinobi(ninja, user){
+function shinobi(user){
 	this.name = "Shinobi";
+	this.description = "Shinobi description \n\nAttributes: \n+10 to short range \n-10 to long range";
 	user.addShortRange(10);
 	user.depleteLongRange(10);
 }
 
-function gunslinger(cowboy, user){
+function gunslinger(user){
 	this.name = "Gunslinger";
+	this.description = "Gunslinger description \n\nAttributes: \n-10 to short range \n+10 to long range";
 	user.depleteShortRange(10);
 	user.addLongRange(10);
 }
 
-function brawler(cowboy, user){
+function brawler(user){
 	this.name = "Brawler";
+	this.description = "Brawler description \n\nAttributes: \n+10 to short range \n-10 to long range";
 	user.addShortRange(10);
 	user.depleteLongRange(10);
 }
 
-function wookie(alien, user){
+function wookie(user){
 	this.name = "Wookie";
+	this.description = "Wookie description \n\nAttributes: \n-10 to short range \n+10 to long range";
 	user.depleteShortRange(10);
 	user.addLongRange(10);
 }
 
-function luggabeast(alien, user){
+function luggabeast(user){
 	this.name = "LuggaBeast"
+	this.description = "Luggabeast description \n\nAttributes: \n+10 to short range \n-10 to long range";
 	user.addShortRange(10);
 	user.depleteShortRange(10);
 }
 // Long Range Weapons
-function revolver(cowboy, user){
+function revolver(user){
 	this.name = "Revolver";
-	this.equipRevolver = function(){
-		Object.assign(cowboy);
+	this.description = "Revolover description \n\nAttributes: \n+5 to long range \n-5 to short range";
+	this.equip = function(){
+		Object.assign(user);
 	};
 	user.addLongRange(5);
+	user.depleteShortRange(5);
 }
 
-function rifle(cowboy, user){
+function rifle(user){
 	this.name = "Rifle";
+	this.description = "Rifle description \n\nAttributes: \n+10 to long range \n-10 to short range";
+	this.equip = function(){
+		Object.assign(user);
+	};
 	user.addLongRange(10);
+	user.depleteShortRange(10);
 }
 
-function shuriken(ninja, user){
+function shuriken(user){
 	this.name = "Shuriken";
+	this.description = "Shuriken description \n\nAttributes: \n+10 to long range \n-10 to short range";
+	this.equip = function(){
+		Object.assign(user);
+	};
 	user.addLongRange(10);
+	user.depleteShortRange(10);
 }
 
-function bowAndArrow(ninja, user){
+function bowAndArrow(user){
 	this.name = "Bow and Arrow";
+	this.description = "Bow and Arrow description";
+	this.equip = function(){
+		Object.assign(user);
+	};
 	user.addLongRange(5);
+	user.depleteShortRange(5);
 }
 
-function rayGun(alien, user){
+function rayGun(user){
 	this.name = "Ray Gun";
+	this.description = "Ray gun description;"
+	this.equip = function(){
+		Object.assign(user);
+	};
 	user.addLongRange(5);
+	user.depleteShortRange(5);
 }
 
-function plasmaRifle(alien, user){
+function plasmaRifle(user){
 	this.name = "Plasma Rifle";
+	this.description = "Plasma rifle description";
+	this.equip = function(){
+		Object.assign(user);
+	};
 	user.addLongRange(10);
+	user.depleteShortRange(10);
 }
 // Short Range Weapons
-function bowieKnife(cowboy, user){
+function bowieKnife(user){
 	this.name = "Bowie Knife";
+	this.description = "Bowie Knife description";
+	this.equip = function(){
+		Object.assign(user);
+	};
 	user.addShortRange(5);
+	user.depleteLongRange(5);
 }
 
-function sword(cowboy, user){
+function sword(user){
 	this.name = "Sword";
+	this.description = "Sword description";
+	this.equip = function(){
+		Object.assign(user);
+	};
 	user.addShortRange(10);
 }
 
-function katana(ninja, user){
+function katana(user){
 	this.name = "Katana";
+	this.description = "Katana description";
+	this.equip = function(){
+		Object.assign(user);
+	};
 	user.addShortRange(10);
+	user.depleteLongRange(10);
 }
 
-function wakizashi(ninja, user){
+function wakizashi(user){
 	this.name = "Wakizashi";
+	this.description = "Wakizashi description";
+	this.equip = function(){
+		Object.assign(user);
+	};
 	user.addShortRange(10);
+	user.depleteLongRange(10);
 }
 
-function electron(alien, user){
+function electron(user){
 	this.name = "Electron";
+	this.description = "Electron description";
+	this.equip = function(){
+		Object.assign(user);
+	};
 	user.addShortRange(5);
+	user.depleteLongRange(5);
 }
 
-function probe(alien, user){
+function probe(user){
 	this.name = "Probe";
+	this.description = "Probe description";
+	this.equip = function(){
+		Object.assign(user);
+	};
 	user.addShortRange(10);
+	user.depleteShortRange(10);
 }
 
+function equipWeapon(weapon){
+	var choice = prompt("Would you like to equip this weapon? \n\nYes \nNo");
+	switch(choice.toLowerCase()){
+		case "yes":
+		weapon.equip(user);
+		alert(weapon.name + " has been equipped.");
+		break;
+		
+		case "no":
+		alert(weapon.name + " has not been equipped");
+		break;
+		
+		default:
+		alert("Invalid selection");
+		equipWeapon(weapon);
+		break;
+	}
+}
 function questOptions(){
 	var choice = prompt("Choose one of three options: ");
 	switch(choice.toLowerCase()){
@@ -465,21 +556,22 @@ function fibonacci(nth){
 function questArray(){
 	var index = 0;
 	for(var key in resourceQuests){
-		quests[index] = new Quest(key, resourceQuests[key].questClass, resourceQuests[key].questName, resourceQuests[key].questObject, resourceQuests[key].questObjective, resourceQuests[key].questResult, resourceQuests[key].questXp, resourceQuests[key].questGold, resourceQuests[key].chanceOfDamage);
+		quests[index] = new Quest(key, resourceQuests[key].questClass, resourceQuests[key].questName, resourceQuests[key].questObjective, resourceQuests[key].questResult, resourceQuests[key].questXp, resourceQuests[key].questGold, resourceQuests[key].chanceOfDamage);
 		index++;
 	}
 	for(var key in fightingQuests){
-		quests[index] = new Quest(key, fightingQuests[key].questClass, fightingQuests[key].questName, fightingQuests[key].questObject, fightingQuests[key].questObjective, fightingQuests[key].questResult, fightingQuests[key].questXp, fightingQuests[key].questGold, fightingQuests[key].chanceOfDamage);
+		quests[index] = new Quest(key, fightingQuests[key].questClass, fightingQuests[key].questName, fightingQuests[key].questObjective, fightingQuests[key].questResult, fightingQuests[key].questXp, fightingQuests[key].questGold, fightingQuests[key].chanceOfDamage);
 		index++;
 	}
 	for(var key in exploreQuests){
-		quests[index] = new Quest(key, exploreQuests[key].questClass, exploreQuests[key].questName, exploreQuests[key].questObject, exploreQuests[key].questObjective, exploreQuests[key].questResult, exploreQuests[key].questXp, exploreQuests[key].questGold, exploreQuests[key].chanceOfDamage);
+		quests[index] = new Quest(key, exploreQuests[key].questClass, exploreQuests[key].questName, exploreQuests[key].questObjective, exploreQuests[key].questResult, exploreQuests[key].questXp, exploreQuests[key].questGold, exploreQuests[key].chanceOfDamage);
 		index++;
 	}
 }
 
-function Quest(id, questName, questObjective, questResult, questXp, questGold, chanceOfDamage){
+function Quest(id, questClass, questName, questObjective, questResult, questXp, questGold, chanceOfDamage){
 	this.id = id;
+	this.questClass = questClass
 	this.questName = questName;
 	this.questObjective = questObjective;
 	this.questResult = questResult;
