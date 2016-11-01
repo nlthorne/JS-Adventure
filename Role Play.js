@@ -4,9 +4,178 @@
 // Upon death, score is determined by the amount of gold accumulated.
 // Each player start at 100 health points which decrement (non-linearly) over the course of the game.
 // Must be at least 5 minutes of gameplay.
+var resourceQuests = {
+	"questOne" : {
+		"questClass": "Resource",
+		"questName": "Gather food",
+		"questObjective": "Some text",
+		"questResult": "Some text",
+		"questXp": 50,
+		"questGold": 20,
+		"chanceOfDamage": 5
+	},
+	"questTwo" : {
+		"questClass": "Resource",
+		"questName": "Gather water",
+		"questObjective": "Some text",
+		"questResult": "Some text",
+		"questXp": 75,
+		"questGold": 35,
+		"chanceOfDamage": 10
+	},
+	"questThree" : {
+		"questClass": "Resource",
+		"questName": "Gather wood",
+		"questObjective": "Some text",
+		"questResult": "Some text",
+		"questXp": 100,
+		"questGold": 50,
+		"chanceOfDamage": 15
+	},
+	"questFour" : {
+		"questClass": "Resource",
+		"questName": "Build weapon",
+		"questObjective": "Some text",
+		"questResult": "Some text",
+		"questXp": 125,
+		"questGold": 75,
+		"chanceOfDamage": 35
+	},
+	"questFive" : {
+		"questClass": "Resource",
+		"questName": "Gather information",
+		"questObjective": "Some text",
+		"questResult": "Some text",
+		"questXp": 200,
+		"questGold": 150,
+		"chanceOfDamage": 50
+	},
+	"questSix" : {
+		"questClass": "Resource",
+		"questName": "Final Plan",
+		"questObjective": "Some text",
+		"questResult": "Some text",
+		"questXp": 350,
+		"questGold": 275,
+		"chanceOfDamage": 35
+	}
+};
 
+var fightingQuests = {
+	"questOne" : {
+		"questClass": "Fighting",
+		"questName" : "The training begins...",
+		"questObjective" : "Some text",
+		"questResult" : "Some text",
+		"questXp" : 50,
+		"questGold" : 50,
+		"chanceOfDamage" : 5
+	},
+	"questTwo" : {
+		"questClass": "Fighting",
+		"questName" : "Kill the boar!",
+		"questObjective" : "Some text",
+		"questResult" : "Some text",
+		"questXp" : 75,
+		"questGold" : 75,
+		"chanceOfDamage" : 10
+	},
+	"questThree" : {
+		"questClass": "Fighting",
+		"questName" : "A new opponent arrives",
+		"questObjective" : "Some text",
+		"questResult" : "Some text",
+		"questXp" : 100,
+		"questGold" : 150,
+		"chanceOfDamage" : 20
+	},
+	"questFour" : {
+		"questClass": "Fighting",
+		"questName" : "Get to the choppa!",
+		"questObjective" : "Some text",
+		"questResult" : "Some text",
+		"questXp" : 150,
+		"questGold" : 250,
+		"chanceOfDamage" : 35
+	},
+	"questFive" : {
+		"questClass": "Fighting",
+		"questName" : "Take out the paparazzi...",
+		"questObjective" : "Some text",
+		"questResult" : "Some text",
+		"questXp" : 300,
+		"questGold" : 500,
+		"chanceOfDamage" : 65
+	},
+	"questSix" : {
+		"questClass": "Fighting",
+		"questName" : "Free the country!",
+		"questObjective" : "Some text",
+		"questResult" : "Some text",
+		"questXp" : 500,
+		"questGold" : 1000,
+		"chanceOfDamage" : 100
+	}
+};
 
-
+var exploreQuests = {
+	"questOne" : {
+		"questClass": "Explore",
+		"questName" : "What's over there?",
+		"questObjective" : "Some text",
+		"questResult" : "Some text",
+		"questXp" : 500,
+		"questGold" : 1000,
+		"chanceOfDamage" : 100
+	},
+	"questTwo" : {
+		"questClass": "Explore",
+		"questName" : "Ain't nobody got time for dat!",
+		"questObjective" : "Some text",
+		"questResult" : "Some text",
+		"questXp" : 500,
+		"questGold" : 1000,
+		"chanceOfDamage" : 100
+	},
+	"questThree" : {
+		"questClass": "Explore",
+		"questName" : "What's in the box!",
+		"questObjective" : "Some text",
+		"questResult" : "Some text",
+		"questXp" : 500,
+		"questGold" : 1000,
+		"chanceOfDamage" : 100
+	},
+	"questFour" : {
+		"questClass": "Explore",
+		"questName" : "Is... is that what I think it is?",
+		"questObjective" : "Some text",
+		"questResult" : "Some text",
+		"questXp" : 500,
+		"questGold" : 1000,
+		"chanceOfDamage" : 100
+	},
+	"questFive" : {
+		"questClass": "Explore",
+		"questName" : "Oh, a secret passage",
+		"questObjective" : "Some text",
+		"questResult" : "Some text",
+		"questXp" : 500,
+		"questGold" : 1000,
+		"chanceOfDamage" : 100
+	},
+	"questSix" : {
+		"questClass": "Explore",
+		"questName" : "Infiltrate the facility.",
+		"questObjective" : "Some text",
+		"questResult" : "Some text",
+		"questXp" : 500,
+		"questGold" : 1000,
+		"chanceOfDamage" : 100
+	},
+};
+var quests = [];
+questArray();
 choosePath(introduction());
 
 function introduction(){
@@ -20,6 +189,7 @@ function choosePath(){
 	switch(choice.toLowerCase()){
 		case "cowboy":
 		Object.assign(new cowboy(user));
+		//storyline(Object.assign(new cowboy(user)));
 		storyline(user);
 		break;
 		
@@ -33,7 +203,7 @@ function choosePath(){
 		
 		default:
 		alert("Invalid selection");
-		choosePath(user)
+		choosePath()
 		break;
 	}
 }
@@ -43,7 +213,7 @@ function Player(name){
 	var gold = 0;
 	var healthPoints = 100;
 	var playerLevel = 0;
-	var expierencePoints = 0;
+	var experiencePoints = 0;
 	var shortRange = 50;
 	var longRange = 50;
 	
@@ -56,8 +226,8 @@ function Player(name){
 	this.addHealth = function(amount){
 		healthPoints +=amount;
 	};
-	this.addExpierencePoints = function(amount){
-		expierencePoints +=amount;
+	this.addexperiencePoints = function(amount){
+		experiencePoints +=amount;
 	};
 	this.increasePlayerLevel = function(amount){
 		playerLevel +=amount;
@@ -83,8 +253,8 @@ function Player(name){
 	this.getHealth = function(){
 		return healthPoints;
 	};
-	this.getExpierencePoints = function(){
-		return expierencePoints;
+	this.getexperiencePoints = function(){
+		return experiencePoints;
 	};
 	this.getShortRange = function(){
 		return shortRange;
@@ -112,6 +282,12 @@ function ninja(user){
 function alien(user){
 	this.name = "Alien";
 	user.addHealth(10);
+}
+
+function storyline(player1){
+	var result = player1.name + "\n";
+	result += quests[0].questName;
+	alert(result);
 }
 // Sub-Classes
 function chooseSubClass(user){
@@ -286,91 +462,28 @@ function fibonacci(nth){
 	}
 }
 
-var resourceQuests = {
-	"questOne" : {
-		"questName" : "Gather food";
-		"questObjective" : "Some text";
-		"questResult" : "Some text";
-		"questXp" : 50;
-		"questGold" : 20;
-		"chanceOfDamage" : 5;
-	},
-	"questTwo" : {
-		"questName" : "Gather water";
-		"questObjective" : "Some text";
-		"questResult" : "Some text";
-		"questXp" : 75;
-		"questGold" : 35;
-		"chanceOfDamage" : 10;
-	},
-	"questThree" : {
-		"questName" : "Gather wood";
-		"questObjective" : "Some text";
-		"questResult" : "Some text";
-		"questXp" : 100;
-		"questGold" : 50;
-		"chanceOfDamage" : 15;
-	},
-	"questFour" : {
-		"questName" : "Build weapon";
-		"questObjective" : "Some text";
-		"questResult" : "Some text";
-		"questXp" : 125;
-		"questGold" : 75;
-		"chanceOfDamage" : 35;
-	},
-	"questFive" : {
-		"questName" : "Gather information";
-		"questObjective" : "Some text";
-		"questResult" : "Some text";
-		"questXp" : 200;
-		"questGold" : 150;
-		"chanceOfDamage" : 50;
-	},
-	"questSix" : {
-		"questName" : "Final Plan";
-		"questObjective" : "Some text";
-		"questResult" : "Some text";
-		"questXp" : 350;
-		"questGold" : 275;
-		"chanceOfDamage" : 35;
+function questArray(){
+	var index = 0;
+	for(var key in resourceQuests){
+		quests[index] = new Quest(key, resourceQuests[key].questClass, resourceQuests[key].questName, resourceQuests[key].questObject, resourceQuests[key].questObjective, resourceQuests[key].questResult, resourceQuests[key].questXp, resourceQuests[key].questGold, resourceQuests[key].chanceOfDamage);
+		index++;
 	}
-};
+	for(var key in fightingQuests){
+		quests[index] = new Quest(key, fightingQuests[key].questClass, fightingQuests[key].questName, fightingQuests[key].questObject, fightingQuests[key].questObjective, fightingQuests[key].questResult, fightingQuests[key].questXp, fightingQuests[key].questGold, fightingQuests[key].chanceOfDamage);
+		index++;
+	}
+	for(var key in exploreQuests){
+		quests[index] = new Quest(key, exploreQuests[key].questClass, exploreQuests[key].questName, exploreQuests[key].questObject, exploreQuests[key].questObjective, exploreQuests[key].questResult, exploreQuests[key].questXp, exploreQuests[key].questGold, exploreQuests[key].chanceOfDamage);
+		index++;
+	}
+}
 
-var fightingQuests = {
-	"questOne" : {
-		"questName" : "The training begins...";
-		"questObjective" : "Some text";
-		"questResult" : "Some text";
-		"questXp" : 50;
-		"questGold" : 50;
-		"chanceOfDamage" : 5;
-	},
-	"questTwo" : {
-		"questName" : "Kill the boar!";
-		"questObjective" : "Some text";
-		"questResult" : "Some text";
-		"questXp" : 75;
-		"questGold" : 75;
-		"chanceOfDamage" : 10;
-	},
-	"questThree" : {
-		"questName" : "A new opponent arrives";
-		"questObjective" : "Some text";
-		"questResult" : "Some text";
-		"questXp" : 100;
-		"questGold" : 150;
-		"chanceOfDamage" : 20;
-	},
-	"questFour" : {
-		"questName" : "Get to the choppa!";
-		"questObjective" : "Some text";
-		"questResult" : "Some text";
-		"questXp" : 150;
-		"questGold" : 250;
-		"chanceOfDamage" : 35;
-	},
-	"questFive" : {
-		"questName" : ""
-	}
+function Quest(id, questName, questObjective, questResult, questXp, questGold, chanceOfDamage){
+	this.id = id;
+	this.questName = questName;
+	this.questObjective = questObjective;
+	this.questResult = questResult;
+	this.questXp = questXp;
+	this.questGold = questGold;
+	this.chanceOfDamage = chanceOfDamage;
 }
