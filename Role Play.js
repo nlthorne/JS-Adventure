@@ -175,18 +175,21 @@ var exploreQuests = {
 	},
 };
 var quests = [];
+var completedQuests = [];
 questArray();
-choosePath(introduction());
-
-function introduction(){
-	
-}
+choosePath();
 
 function choosePath(){
 	let user = prompt("Enter a username: ");
 	user = new Player(user);
 	var choice = prompt("Choose a path " + user.name + ": \n\nCowboy \nNinja \nAlien");
-	confirmChoice(choice);
+	var confirmChoice = confirm("You chose the " + choice + " class. \n\nClass description: \n" + classDescriptionConvert(choice) + "\n\nPress OK to continue or Cancel to choose a different class");
+	if (confirmChoice == true){
+		txt = "You pressed OK!";
+	} else {
+		txt = "You pressed Cancel!";
+		choosePath();
+	}
 	switch(choice.toLowerCase()){
 		case "cowboy":
 		Object.assign(new cowboy(user));
@@ -208,6 +211,21 @@ function choosePath(){
 	}
 }
 
+function classDescriptionConvert(choice){
+	if (choice === "cowboy"){
+		return cowboy.description;
+	}
+	else if (choice === "ninja"){
+		return ninja.description;
+	}
+	else if (choice === "alien"){
+		return alien.description;
+	}
+	else{
+		alert("Invalid selection");
+		choosePath();
+	}
+}
 function Player(name){
 	this.name = name;
 	var gold = 0;
@@ -269,7 +287,7 @@ function Player(name){
 // Classes
 function cowboy(user){
 	this.name = "Cowboy";
-	this.description = "Cowboy description \n\nAttributes: \n-5 to short range \n+10 to long range";
+	this.description = ("Cowboy description \n\nAttributes: \n-5 to short range \n+10 to long range");
 	user.depleteShortRange(5);
 	user.addLongRange(10);
 }
@@ -288,9 +306,8 @@ function alien(user){
 }
 
 function storyline(player1){
-	var completedQuests = [];
 	var availableQuests = [];
-	if(var i=0; i < quests.length; i++){
+	for(var i=0; i < quests.length; i++){
 		if(quests[i].questClass == "Fighting"){
 			return quests[i];
 		}
@@ -414,7 +431,7 @@ function shuriken(user){
 
 function bowAndArrow(user){
 	this.name = "Bow and Arrow";
-	this.description = "Bow and Arrow description";
+	this.description = "Bow and Arrow description \n\nAttributes: \n+5 to long range \n-5 to short range";
 	this.equip = function(){
 		Object.assign(user);
 	};
@@ -424,7 +441,7 @@ function bowAndArrow(user){
 
 function rayGun(user){
 	this.name = "Ray Gun";
-	this.description = "Ray gun description;"
+	this.description = "Ray gun description \n\nAttributes: \n+5 to long range \n-5 to short range";
 	this.equip = function(){
 		Object.assign(user);
 	};
@@ -434,7 +451,7 @@ function rayGun(user){
 
 function plasmaRifle(user){
 	this.name = "Plasma Rifle";
-	this.description = "Plasma rifle description";
+	this.description = "Plasma rifle description \n\nAttributes: \n+10 to long range \n-10 to short range";
 	this.equip = function(){
 		Object.assign(user);
 	};
@@ -444,7 +461,7 @@ function plasmaRifle(user){
 // Short Range Weapons
 function bowieKnife(user){
 	this.name = "Bowie Knife";
-	this.description = "Bowie Knife description";
+	this.description = "Bowie Knife description \n\nAttributes: \n+5 to short range \n-5 to long range";
 	this.equip = function(){
 		Object.assign(user);
 	};
@@ -454,16 +471,17 @@ function bowieKnife(user){
 
 function sword(user){
 	this.name = "Sword";
-	this.description = "Sword description";
+	this.description = "Sword description \n\nAttributes: \n+10 to short range \n-10 to long range";
 	this.equip = function(){
 		Object.assign(user);
 	};
 	user.addShortRange(10);
+	user.depleteLongRange(10);
 }
 
 function katana(user){
 	this.name = "Katana";
-	this.description = "Katana description";
+	this.description = "Katana description \n\nAttributes: \n+10 to short range \n-10 to long range";
 	this.equip = function(){
 		Object.assign(user);
 	};
@@ -473,7 +491,7 @@ function katana(user){
 
 function wakizashi(user){
 	this.name = "Wakizashi";
-	this.description = "Wakizashi description";
+	this.description = "Wakizashi description \n\nAttributes: \n+10 to short range \n-10 to long range";
 	this.equip = function(){
 		Object.assign(user);
 	};
@@ -483,7 +501,7 @@ function wakizashi(user){
 
 function electron(user){
 	this.name = "Electron";
-	this.description = "Electron description";
+	this.description = "Electron description \n\nAttributes: \n+5 to short range \n-5 to long range";
 	this.equip = function(){
 		Object.assign(user);
 	};
@@ -493,7 +511,7 @@ function electron(user){
 
 function probe(user){
 	this.name = "Probe";
-	this.description = "Probe description";
+	this.description = "Probe description \n\nAttributes: \n+10 to short range \n-10 to long range";
 	this.equip = function(){
 		Object.assign(user);
 	};
@@ -519,6 +537,22 @@ function equipWeapon(weapon){
 		break;
 	}
 }
+
+function completedQuests(user){
+	var nextQuest = [];
+	for(var i=0; i < quests.length; i++){
+		for(var c=0; c < completedQuests.length; c++){
+			if (quests[i].id != completedQuests[c].id){
+				nextQuest.push(quests[i]);
+			}
+			else {
+				nextQuest.push(quests[i]++);
+			}
+		}
+	}
+	return nextQuest;
+}
+
 function questOptions(){
 	var choice = prompt("Choose one of three options: ");
 	switch(choice.toLowerCase()){
