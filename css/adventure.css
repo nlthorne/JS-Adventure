@@ -1,0 +1,32 @@
+h1
+{
+	text-align: center;
+}
+h4
+{
+	text-align: center;
+}
+.div-with-bg
+{
+    background-image: url("../content/bkg1.jpg");
+    background-size:100% 100%;
+    background-attachment: fixed;
+}
+p 
+{
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: .05%;
+    text-align: center;
+}
+button
+{
+
+}
+#div-fill
+{
+	height: 700px;
+	width: 100%;
+	
+    
+}
