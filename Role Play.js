@@ -8,9 +8,14 @@ var resourceQuests = {
 	"questOne" : {
 		"questClass": "Resource",
 		"questName": "Gather food",
+<<<<<<< HEAD
 		"questObjective": "It is early in the morning and you feel a rumble in your stomach. You believe that you are hungry but are unsure where to get food. While wandering through the woods you come across a batch of off-colored berries. Do you want to pick the berries to fight the hungry?",
 		"questWinResult": "The berries satisfy your hunger and feel much better!",
 		"questLoseResult" : "The berries are poisionous! You being to feel sick and throw up every where.",
+=======
+		"questObjective": "Increase experience points and gold at a low risk to user",
+		"questResult": "Some text",
+>>>>>>> origin/master
 		"questXp": 50,
 		"questGold": 20,
 		"chanceOfDamage": 5
@@ -18,9 +23,14 @@ var resourceQuests = {
 	"questTwo" : {
 		"questClass": "Resource",
 		"questName": "Gather water",
+<<<<<<< HEAD
 		"questObjective": "Parched is an understatement and you must find water. You come across a riverbend of a darkish color and can not see the bottom. Do you wish to drink from the riverbend?",
 		"questWinResult": "The water is refreshing and you are no longer thirsty. Today is a lovely, lovely day.",
 		"questLoseResult" : "The water from the river bend tastes terrible! You look down the bend and see that it is attached to the city sewage.",
+=======
+		"questObjective": "Increase experience points and gold at a low risk to user",
+		"questResult": "Some text",
+>>>>>>> origin/master
 		"questXp": 75,
 		"questGold": 35,
 		"chanceOfDamage": 10
@@ -28,9 +38,14 @@ var resourceQuests = {
 	"questThree" : {
 		"questClass": "Resource",
 		"questName": "Gather wood",
+<<<<<<< HEAD
 		"questObjective": "The day has turned to night and you must gather wood to create a fire as the temperature is dropping at a rapid pace. You hear howling and screeching in the woods. Do you want to go and gather wood for the night?",
 		"questWinResult": "A pack of wolves surround you. While waving your hands in the air, a giant bear storms through the area and takes out the wolves and lets you be. Although the encounter was close, you leave with no damage and gather enough wood for the month. Congratulations!",
 		"questLoseResult" : "While chopping down a tree, a pack of wolves surround ready to attack. Although you were able to fend them off, you barely leave the wretched woods with your life.",
+=======
+		"questObjective": "Increase experience points and gold at a low risk to user",
+		"questResult": "Some text",
+>>>>>>> origin/master
 		"questXp": 100,
 		"questGold": 50,
 		"chanceOfDamage": 15
@@ -38,9 +53,14 @@ var resourceQuests = {
 	"questFour" : {
 		"questClass": "Resource",
 		"questName": "Build weapon",
+<<<<<<< HEAD
 		"questObjective": "After the previous encounter in the woods, you decide it is time to create a weapon to protect yourself from the evils. With little experience in weapon crafting, incidents are bound to happen. Would you like to continue to create a weapon?",
 		"questWinResult": "Other than a bruised thumb from swinging the hammer, you have successfully created a weapon to carry with you!",
 		"questLoseResult" : "As expected, the weapon you were creating is slightly malfunctioning. During a test to see how it works, the weapon explodes in your hands and pieces pierce your skin.",
+=======
+		"questObjective": "Increase experience points and gold at a low risk to user",
+		"questResult": "Some text",
+>>>>>>> origin/master
 		"questXp": 125,
 		"questGold": 75,
 		"chanceOfDamage": 35
@@ -48,9 +68,14 @@ var resourceQuests = {
 	"questFive" : {
 		"questClass": "Resource",
 		"questName": "Gather information",
+<<<<<<< HEAD
 		"questObjective": "You hear that an evil is taking over the country and need to know more about what is happening. You must sneak into the local library, and Google what exactly this 'Evil' is and how to stop it. Do you dare risk your own life to save the world?",
 		"questWinResult": "Sneaking behind trees and tumbling through bushes, you finally reach your destination. Breaking the glass to the back door, you realize it was left unlocked and walk in. After your search for 'Evil', you quickly realize it is not just one evil, but two...",
 		"questLoseResult" : "SPOTTED! You are not so slick young padawan! The police arrive and you spend a night in jail with your new 'best friend', Bubba.",
+=======
+		"questObjective": "Increase experience points and gold at a low risk to user",
+		"questResult": "Some text",
+>>>>>>> origin/master
 		"questXp": 200,
 		"questGold": 150,
 		"chanceOfDamage": 50
@@ -58,9 +83,14 @@ var resourceQuests = {
 	"questSix" : {
 		"questClass": "Resource",
 		"questName": "Final Plan",
+<<<<<<< HEAD
 		"questObjective": "You must defeat the 'Evil' but you need a good plan to do such. After gathering all the information of what you know on the 'Evil' you realize this will not be as easy as it sounds. Do you want to come up with a grand final plan to take them down?",
 		"questWinResult": "The plan is final and all possibily of threat has been eliminated.",
 		"questLoseResult" : "The plan looks....well....terrible. You realize you are terrible at creating plans and find the closest bar. Waking up you realize you are in a hospital with alcohol poisioning.",
+=======
+		"questObjective": "Increase experience points and gold at a low risk to user",
+		"questResult": "Some text",
+>>>>>>> origin/master
 		"questXp": 350,
 		"questGold": 275,
 		"chanceOfDamage": 35
@@ -71,9 +101,14 @@ var fightingQuests = {
 	"questOne" : {
 		"questClass": "Fighting",
 		"questName" : "The training begins...",
+<<<<<<< HEAD
 		"questObjective" : "You need to begin your training! You find a large stick and need to head into the woods to practice hitting a tree. Do you want to go into the dangers of the woods to practice?",
 		"questWinResult" : "You wack away at a tree for hours until the tree is ravished and torn. You can accomplish anything!",
 		"questLoseResult" : "While practicing, you sprain your wrist when you strike the tree too hard.",
+=======
+		"questObjective" : "Increase experience points and gold at a high risk to user with increased results",
+		"questResult" : "Some text",
+>>>>>>> origin/master
 		"questXp" : 50,
 		"questGold" : 50,
 		"chanceOfDamage" : 5
@@ -81,9 +116,14 @@ var fightingQuests = {
 	"questTwo" : {
 		"questClass": "Fighting",
 		"questName" : "Kill the boar!",
+<<<<<<< HEAD
 		"questObjective" : "Feeling confident, you decide that you need to find a real opponent. 'A BOAR!' you scream aloud. Do you want to find a boar to increase your fighting techniques?",
 		"questWinResult" : "You find a boar and raise your mighty stick in the air. 'Prepare for death' is what you bellow at the boar and attack. You have successfully eliminated the opponent.",
 		"questLoseResult" : "Searching for a boar is not easy to find, but wolves are! Finding a wolf was easy enough, but not so easy to defeat. You leave defeated, battered, and bruised.",
+=======
+		"questObjective" : "Increase experience points and gold at a high risk to user with increased results",
+		"questResult" : "Some text",
+>>>>>>> origin/master
 		"questXp" : 75,
 		"questGold" : 75,
 		"chanceOfDamage" : 10
@@ -91,9 +131,14 @@ var fightingQuests = {
 	"questThree" : {
 		"questClass": "Fighting",
 		"questName" : "A new opponent arrives",
+<<<<<<< HEAD
 		"questObjective" : "You are abruptly awoken by a sound. Someone is nearby, but why here? Crawling to the top of the hill you spot three men in black suits. 'OVER THERE' one man says while pointing a finger at you. Do you stand and fight or run?",
 		"questWinResult" : "Some text",
 		"questLoseResult" : "Some text",
+=======
+		"questObjective" : "Increase experience points and gold at a high risk to user with increased results",
+		"questResult" : "Some text",
+>>>>>>> origin/master
 		"questXp" : 100,
 		"questGold" : 150,
 		"chanceOfDamage" : 20
@@ -101,9 +146,14 @@ var fightingQuests = {
 	"questFour" : {
 		"questClass": "Fighting",
 		"questName" : "Get to the choppa!",
+<<<<<<< HEAD
 		"questObjective" : "Some text",
 		"questWinResult" : "Some text",
 		"questLoseResult" : "Some text",
+=======
+		"questObjective" : "Increase experience points and gold at a high risk to user with increased results",
+		"questResult" : "Some text",
+>>>>>>> origin/master
 		"questXp" : 150,
 		"questGold" : 250,
 		"chanceOfDamage" : 35
@@ -111,9 +161,14 @@ var fightingQuests = {
 	"questFive" : {
 		"questClass": "Fighting",
 		"questName" : "Take out the paparazzi...",
+<<<<<<< HEAD
 		"questObjective" : "Some text",
 		"questWinResult" : "Some text",
 		"questLoseResult" : "Some text",
+=======
+		"questObjective" : "Increase experience points and gold at a high risk to user with increased results",
+		"questResult" : "Some text",
+>>>>>>> origin/master
 		"questXp" : 300,
 		"questGold" : 500,
 		"chanceOfDamage" : 65
@@ -121,9 +176,14 @@ var fightingQuests = {
 	"questSix" : {
 		"questClass": "Fighting",
 		"questName" : "Free the country!",
+<<<<<<< HEAD
 		"questObjective" : "Some text",
 		"questWinResult" : "Some text",
 		"questLoseResult" : "Some text",
+=======
+		"questObjective" : "Increase experience points and gold at a high risk to user with increased results",
+		"questResult" : "Some text",
+>>>>>>> origin/master
 		"questXp" : 500,
 		"questGold" : 1000,
 		"chanceOfDamage" : 100
@@ -134,9 +194,14 @@ var exploreQuests = {
 	"questOne" : {
 		"questClass": "Explore",
 		"questName" : "What's over there?",
+<<<<<<< HEAD
 		"questObjective" : "Some text",
 		"questWinResult" : "Some text",
 		"questLoseResult" : "Some text",
+=======
+		"questObjective" : "Increase experience points and gold at a high risk to user with increased results",
+		"questResult" : "Some text",
+>>>>>>> origin/master
 		"questXp" : 500,
 		"questGold" : 1000,
 		"chanceOfDamage" : 100
@@ -144,9 +209,14 @@ var exploreQuests = {
 	"questTwo" : {
 		"questClass": "Explore",
 		"questName" : "Ain't nobody got time for dat!",
+<<<<<<< HEAD
 		"questObjective" : "Some text",
 		"questWinResult" : "Some text",
 		"questLoseResult" : "Some text",
+=======
+		"questObjective" : "Increase experience points and gold at a high risk to user with increased results",
+		"questResult" : "Some text",
+>>>>>>> origin/master
 		"questXp" : 500,
 		"questGold" : 1000,
 		"chanceOfDamage" : 100
@@ -154,9 +224,14 @@ var exploreQuests = {
 	"questThree" : {
 		"questClass": "Explore",
 		"questName" : "What's in the box!",
+<<<<<<< HEAD
 		"questObjective" : "Some text",
 		"questWinResult" : "Some text",
 		"questLoseResult" : "Some text",
+=======
+		"questObjective" : "Increase experience points and gold at a high risk to user with increased results",
+		"questResult" : "Some text",
+>>>>>>> origin/master
 		"questXp" : 500,
 		"questGold" : 1000,
 		"chanceOfDamage" : 100
@@ -164,9 +239,14 @@ var exploreQuests = {
 	"questFour" : {
 		"questClass": "Explore",
 		"questName" : "Is... is that what I think it is?",
+<<<<<<< HEAD
 		"questObjective" : "Some text",
 		"questWinResult" : "Some text",
 		"questLoseResult" : "Some text",
+=======
+		"questObjective" : "Increase experience points and gold at a high risk to user with increased results",
+		"questResult" : "Some text",
+>>>>>>> origin/master
 		"questXp" : 500,
 		"questGold" : 1000,
 		"chanceOfDamage" : 100
@@ -174,9 +254,14 @@ var exploreQuests = {
 	"questFive" : {
 		"questClass": "Explore",
 		"questName" : "Oh, a secret passage",
+<<<<<<< HEAD
 		"questObjective" : "Some text",
 		"questWinResult" : "Some text",
 		"questLoseResult" : "Some text",
+=======
+		"questObjective" : "Increase experience points and gold at a high risk to user with increased results",
+		"questResult" : "Some text",
+>>>>>>> origin/master
 		"questXp" : 500,
 		"questGold" : 1000,
 		"chanceOfDamage" : 100
@@ -184,9 +269,14 @@ var exploreQuests = {
 	"questSix" : {
 		"questClass": "Explore",
 		"questName" : "Infiltrate the facility.",
+<<<<<<< HEAD
 		"questObjective" : "Some text",
 		"questWinResult" : "Some text",
 		"questLoseResult" : "Some text",
+=======
+		"questObjective" : "Increase experience points and gold at a high risk to user with increased results",
+		"questResult" : "Some text",
+>>>>>>> origin/master
 		"questXp" : 500,
 		"questGold" : 1000,
 		"chanceOfDamage" : 100
@@ -203,8 +293,11 @@ questArray();
 choosePath();
 
 function choosePath(){
-	let user = prompt("Enter a username: ");
-	user = new Player(user);
+	let userName = prompt("Enter a username: ");
+	let user = new Player();
+	
+	setName.call(user, userName);
+	
 	var choice = prompt("Choose a path " + user.name + ": \n\nCowboy \nNinja \nAlien");
 	var confirmChoice = confirm("You chose the " + choice + " class. \n\nClass description: \n" + classDescriptionConvert(choice) + "\n\nPress OK to continue or Cancel to choose a different class");
 	if (confirmChoice == true){
@@ -249,9 +342,14 @@ function classDescriptionConvert(choice){
 		choosePath();
 	}
 }
+<<<<<<< HEAD
 
 function Player(name){
 	this.name = name;
+=======
+function Player(){
+	this.name;
+>>>>>>> origin/master
 	var gold = 0;
 	var healthPoints = 100;
 	var playerLevel = 0;
@@ -308,12 +406,21 @@ function Player(name){
 		return playerLevel;
 	};
 }
+function setName(name){
+	this.name = name;
+}
+function setRanges(shortRange, longRange){
+	this.depleteShortRange(shortRange);
+	this.addLongRange(longRange);
+}
 // Classes
 function cowboy(user){
 	this.name = "Cowboy";
 	this.description = ("Cowboy description \n\nAttributes: \n-5 to short range \n+10 to long range");
-	user.depleteShortRange(5);
-	user.addLongRange(10);
+	var shortRange = 5;
+	var longRange = 10;
+	
+	setRanges.apply(user, [shortRange, longRange]);	
 }
 
 function ninja(user){
@@ -407,6 +514,7 @@ function retrieveSubClass(user){
 function samaruai(user){
 	this.name = "Samaruai";
 	this.description = "Samaruai description \n\nAttributes: \n-10 to short range \n+10 to long range";
+	
 	user.depleteShortRange(10);
 	user.addLongRange(10);
 }

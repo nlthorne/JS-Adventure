@@ -8,7 +8,7 @@
     <link href="css/adventure.css" rel="stylesheet">
   </head>
 <body>
-<div id="introduction">
+<div id="introduction" class="container">
 	<h1>Begin your journey..</h1>
     <h4>Welcome to your destiny.. </h4>
 	<p>You've been tasked with the assignment of venturing west in the search of gold to save the country. The country is under siege by the looming threat of two great evils and only you, and your ability to survive, can save it. On your journey you will have to make decisions on how to earn enough gold to overthrow the threat.  You will have many options to choose from.  Will you fight to earn the gold you need, or will you peacefully gather resources to earn your way.  Remember, your decisions have consequences though.  You may earn more gold fighting but you may also take more damage doing so, the choice is yours.  Choose wisely!</p>
@@ -21,10 +21,10 @@
   <button onclick="chooseNinja()">Ninja</button>
   <button onclick="chooseCowboy()">Cowboy</button>
 </div>
-<div id="eventHandler">
+<div id="eventHandler" class="container">
 	<h1 id="event"></h1>
 	<p id="eventText"></p>
-	<button onclick="chooseQuest('gather', 'one')">Gather</button>
+	<button onclick="chooseQuest('gather', 'questOne')">Gather</button>
 	<button onclick="chooseQuest('explore', 'one')">Explore</button>
 	<button onclick="chooseQuest('fight', 'one')">Fight</button></div>
 	<div id="userUpdate">
@@ -34,7 +34,7 @@
 	<p id ="fight"></p>
 	<p id ="goldUpdate"></p>
 	<p id ="healthUpdate"> </p>
-	<button onclick="displaySecondChallenge()">Continue</button>
+	<button id="continue-button" onclick="displayQuestOptions()">Continue</button>
 </div>
 
 <div id="finalScore">
