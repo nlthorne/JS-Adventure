@@ -191,7 +191,7 @@ var exploreQuests = {
 		"questXp" : 500,
 		"questGold" : 1000,
 		"chanceOfDamage" : 100
-	},
+	}
 };
 
 //document.getElementById("run").innerHTML
@@ -460,7 +460,7 @@ function setRangesForNinja(shortRange, longRange){
 // Classes
 function cowboy(user){
 	this.name = "Cowboy";
-	this.description = ("Cowboy description \n\nAttributes: \n-5 to short range \n+10 to long range");
+	this.description = ("A cowboy's weapon of choice is a six-shoter and has an outstanding long range shot");
 	var shortRange = 5;
 	var longRange = 10;
 	
@@ -471,7 +471,7 @@ function cowboy(user){
 
 function ninja(user){
 	this.name = "Ninja";
-	this.description = "Ninja description \n\nAttributes: \n+10 to short range \n-5 to long range";
+	this.description = "A ninja is a mercenary, highly trained in martial arts and stealth (ninjutsu) it's advantage is in short range attacks.  You won't know what hit you.";
 
 	//user.addShortRange(10);
 	//user.depleteLongRange(5);	
@@ -488,7 +488,7 @@ function ninja(user){
 
 function alien(user){
 	this.name = "Alien";
-	this.description = "Alien description \n\nAttributes: \n+10 to player health";
+	this.description = "Alien's are physically imposing.  They stand 8' tall and weigh 375 lbs.  Their weapon of choice is the probe.  They are very hard to kill!";
 	user.addHealth(10);
 	
 	choosePath("alien");
@@ -536,7 +536,7 @@ function retrieveSubClass(user){
 
 function samaruai(user){
 	this.name = "Samaruai";
-	this.description = "Samaruai description \n\nAttributes: \n-10 to short range \n+10 to long range";
+	this.description = "Samurai are fearsome warriors who are experts in jujitsu, kendo and archery.";
 	
 	user.depleteShortRange(10);
 	user.addLongRange(10);
@@ -544,42 +544,42 @@ function samaruai(user){
 
 function shinobi(user){
 	this.name = "Shinobi";
-	this.description = "Shinobi description \n\nAttributes: \n+10 to short range \n-10 to long range";
+	this.description = "Shinobi are super ninja's they are experts in espionage, sabotage, infiltration, assassination and guerrilla warfare";
 	user.addShortRange(10);
 	user.depleteLongRange(10);
 }
 
 function gunslinger(user){
 	this.name = "Gunslinger";
-	this.description = "Gunslinger description \n\nAttributes: \n-10 to short range \n+10 to long range";
+	this.description = "Gunslingers are flashy and confident New Age warriors that rely on a wide array of guns and powerful skills to deal as much damage as possible in a short amount of time to their enemies. ";
 	user.depleteShortRange(10);
 	user.addLongRange(10);
 }
 
 function brawler(user){
 	this.name = "Brawler";
-	this.description = "Brawler description \n\nAttributes: \n+10 to short range \n-10 to long range";
+	this.description = "Brawler's are excellent at hand to hand combat and they have big knockout power!";
 	user.addShortRange(10);
 	user.depleteLongRange(10);
 }
 
 function wookie(user){
 	this.name = "Wookie";
-	this.description = "Wookie description \n\nAttributes: \n-10 to short range \n+10 to long range";
+	this.description = "Wookie's are a species of intelligent bipeds from the planet Kashyyyk.  They possess enormous strength and are armed with laser blasters";
 	user.depleteShortRange(10);
 	user.addLongRange(10);
 }
 
 function luggabeast(user){
 	this.name = "LuggaBeast"
-	this.description = "Luggabeast description \n\nAttributes: \n+10 to short range \n-10 to long range";
+	this.description = "Luggabeast are more machine than beast, this alien creature's pedigree is lost somewhere underneath all of those implants and armor. They stand 9' tall and weight 1.5 tons";
 	user.addShortRange(10);
 	user.depleteShortRange(10);
 }
 // Long Range Weapons
 function revolver(user){
 	this.name = "Revolver";
-	this.description = "Revolover description \n\nAttributes: \n+5 to long range \n-5 to short range";
+	this.description = "A pistol with revolving chambers enabling several shots to be fired without reloading";
 	this.equip = function(){
 		Object.assign(user);
 	};
@@ -589,7 +589,7 @@ function revolver(user){
 
 function rifle(user){
 	this.name = "Rifle";
-	this.description = "Rifle description \n\nAttributes: \n+10 to long range \n-10 to short range";
+	this.description = "A gun, especially one fired from shoulder level, having a long spirally grooved barrel intended to make a bullet spin and thereby have greater accuracy over a long distance.";
 	this.equip = function(){
 		Object.assign(user);
 	};
@@ -599,7 +599,7 @@ function rifle(user){
 
 function shuriken(user){
 	this.name = "Shuriken";
-	this.description = "Shuriken description \n\nAttributes: \n+10 to long range \n-10 to short range";
+	this.description = "A weapon in the form of a star with projecting blades or points, used as a missile in some martial arts.";
 	this.equip = function(){
 		Object.assign(user);
 	};
@@ -609,7 +609,7 @@ function shuriken(user){
 
 function bowAndArrow(user){
 	this.name = "Bow and Arrow";
-	this.description = "Bow and Arrow description \n\nAttributes: \n+5 to long range \n-5 to short range";
+	this.description = "A weapon consisting of arrows and the bow to shoot them. arrow - a projectile with a straight thin shaft and an arrowhead on one end";
 	this.equip = function(){
 		Object.assign(user);
 	};
@@ -619,7 +619,7 @@ function bowAndArrow(user){
 
 function rayGun(user){
 	this.name = "Ray Gun";
-	this.description = "Ray gun description \n\nAttributes: \n+5 to long range \n-5 to short range";
+	this.description = "A gun causing injury or damage by the emission of rays.";
 	this.equip = function(){
 		Object.assign(user);
 	};
@@ -629,7 +629,7 @@ function rayGun(user){
 
 function plasmaRifle(user){
 	this.name = "Plasma Rifle";
-	this.description = "Plasma rifle description \n\nAttributes: \n+10 to long range \n-10 to short range";
+	this.description = "A plasma weapon is a type of raygun that fires a stream, bolt(s), pulse or toroid of plasma";
 	this.equip = function(){
 		Object.assign(user);
 	};
@@ -639,7 +639,7 @@ function plasmaRifle(user){
 // Short Range Weapons
 function bowieKnife(user){
 	this.name = "Bowie Knife";
-	this.description = "Bowie Knife description \n\nAttributes: \n+5 to short range \n-5 to long range";
+	this.description = "A long knife with a blade double-edged at the point.";
 	this.equip = function(){
 		Object.assign(user);
 	};
@@ -649,7 +649,7 @@ function bowieKnife(user){
 
 function sword(user){
 	this.name = "Sword";
-	this.description = "Sword description \n\nAttributes: \n+10 to short range \n-10 to long range";
+	this.description = "A weapon with a long metal blade and a hilt with a hand guard, used for thrusting or striking";
 	this.equip = function(){
 		Object.assign(user);
 	};
@@ -659,7 +659,7 @@ function sword(user){
 
 function katana(user){
 	this.name = "Katana";
-	this.description = "Katana description \n\nAttributes: \n+10 to short range \n-10 to long range";
+	this.description = "The katana is a sword characterized by its distinctive appearance: a curved, slender, single-edged blade with a circular or squared guard and long grip to accommodate two hand";
 	this.equip = function(){
 		Object.assign(user);
 	};
@@ -669,7 +669,7 @@ function katana(user){
 
 function wakizashi(user){
 	this.name = "Wakizashi";
-	this.description = "Wakizashi description \n\nAttributes: \n+10 to short range \n-10 to long range";
+	this.description = "A Japanese sword shorter than a katana.  The wakizashi being worn together with the katana was the official sign that the wearer was a samurai or swordsman of feudal Japan";
 	this.equip = function(){
 		Object.assign(user);
 	};
@@ -679,7 +679,7 @@ function wakizashi(user){
 
 function electron(user){
 	this.name = "Electron";
-	this.description = "Electron description \n\nAttributes: \n+5 to short range \n-5 to long range";
+	this.description = "Electron is an energy pulse weapons that disables it's victims on a sub-atomic level";
 	this.equip = function(){
 		Object.assign(user);
 	};
@@ -689,7 +689,7 @@ function electron(user){
 
 function probe(user){
 	this.name = "Probe";
-	this.description = "Probe description \n\nAttributes: \n+10 to short range \n-10 to long range";
+	this.description = "The 'A' probe is an alien's weapon of choice.  Once inserted in the victim, the victim will never regain 100% health";
 	this.equip = function(){
 		Object.assign(user);
 	};
