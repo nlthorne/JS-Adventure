@@ -19,14 +19,19 @@ p
     padding-top: .05%;
     text-align: center;
 }
-button
+.container
 {
-
+	text-align:center;
+	margin:auto;
 }
 #div-fill
 {
 	height: 700px;
-	width: 100%;
-	
+	width: 100%;	
     
+}
+#continue-button
+{
+	margin:auto;
+  	display:block;
 }
