@@ -102,9 +102,9 @@ var fightingQuests = {
 	"questFour" : {
 		"questClass": "Fighting",
 		"questName" : "Get to the choppa!",
-		"questObjective" : "Some text",
-		"questWinResult" : "Some text",
-		"questLoseResult" : "Some text",
+		"questObjective" : "You enter an arena and in front of you is Arnold \"Freakin\" Schwarzenegger.  This could get ugly very quickly!",
+		"questWinResult" : "Wait, isn't Arnold Schwarzenegger like 100 years old?  Yeah, that was a super easy fight.  You da champ!",
+		"questLoseResult" : "Unfortunatly this is the Terminator version of Arnie and he even learned karate.  It wasn't even close!",
 		"questXp" : 150,
 		"questGold" : 250,
 		"chanceOfDamage" : 35
@@ -112,9 +112,9 @@ var fightingQuests = {
 	"questFive" : {
 		"questClass": "Fighting",
 		"questName" : "Take out the paparazzi...",
-		"questObjective" : "Some text",
-		"questWinResult" : "Some text",
-		"questLoseResult" : "Some text",
+		"questObjective" : "You are surrounded by a group of paparazzi.  They are really Yakuza gangsters in disguise.  You are surrounded and there is no way out!",
+		"questWinResult" : "You disarm one of the members and obtain his machine gun.  You use him as a sheild while killing off his friends.",
+		"questLoseResult" : "You are no match for them.  They beat you up and then they take a picture of you and send it to your mother.  Pretty Rude!",
 		"questXp" : 300,
 		"questGold" : 500,
 		"chanceOfDamage" : 65
@@ -122,9 +122,9 @@ var fightingQuests = {
 	"questSix" : {
 		"questClass": "Fighting",
 		"questName" : "Free the country!",
-		"questObjective" : "Some text",
-		"questWinResult" : "Some text",
-		"questLoseResult" : "Some text",
+		"questObjective" : "This is the final stage, you must defeat the two headed Hillary-Trump beast to truely make America great again!",
+		"questWinResult" : "The Hillary-Trump beast punches you in the face but it's tiny little hands cannot hurt you!  You find the beast's weakness which is it's heart and slay the beast, thus freeing the people!",
+		"questLoseResult" : "The Hillary-Trump beast grabbed you by your pussy taking away all of your health points.  You wonder if this fight was rigged but we will never know?",
 		"questXp" : 500,
 		"questGold" : 1000,
 		"chanceOfDamage" : 100
@@ -135,9 +135,9 @@ var exploreQuests = {
 	"questOne" : {
 		"questClass": "Explore",
 		"questName" : "What's over there?",
-		"questObjective" : "Some text",
-		"questWinResult" : "Some text",
-		"questLoseResult" : "Some text",
+		"questObjective" : "Your objective for the first exploration quest is to gain experience, collect gold and keep on surviving!",
+		"questWinResult" : "You have gained experience and gold without taking any damage!",
+		"questLoseResult" : "You are attacked by a wolf, you survived but have taken some damage",
 		"questXp" : 500,
 		"questGold" : 1000,
 		"chanceOfDamage" : 100
@@ -145,9 +145,9 @@ var exploreQuests = {
 	"questTwo" : {
 		"questClass": "Explore",
 		"questName" : "Ain't nobody got time for dat!",
-		"questObjective" : "Some text",
-		"questWinResult" : "Some text",
-		"questLoseResult" : "Some text",
+		"questObjective" : "On your journey you are stopped by one of the villages peasants asking for a donation",
+		"questWinResult" : "You give the kind gentleman some of your gold.  He is really a prince who is so impressed by your generosity the he gives you 1000 gold",
+		"questLoseResult" : "You tell the begger to get a job and he sends his dogs on you, the dogs have inflicted damage",
 		"questXp" : 500,
 		"questGold" : 1000,
 		"chanceOfDamage" : 100
@@ -155,9 +155,9 @@ var exploreQuests = {
 	"questThree" : {
 		"questClass": "Explore",
 		"questName" : "What's in the box!",
-		"questObjective" : "Some text",
-		"questWinResult" : "Some text",
-		"questLoseResult" : "Some text",
+		"questObjective" : "You enter a cave and after exploring for about an hour you find a jewel encrusted box",
+		"questWinResult" : "You open the box and it contains 1000 gold!  Today is your lucky day!!",
+		"questLoseResult" : "You open the box and a snake jumps out at you.  You are bitten but manage to suck out the poison.  You are alive but have taken damage",
 		"questXp" : 500,
 		"questGold" : 1000,
 		"chanceOfDamage" : 100
@@ -165,9 +165,9 @@ var exploreQuests = {
 	"questFour" : {
 		"questClass": "Explore",
 		"questName" : "Is... is that what I think it is?",
-		"questObjective" : "Some text",
-		"questWinResult" : "Some text",
-		"questLoseResult" : "Some text",
+		"questObjective" : "While exploring in the desert you come across an abandoned house in the middle of nowhere, you go in to investigate",
+		"questWinResult" : "The house belongs to a great wizard, he invites you in and feeds you.  Then you stab him in the back and take his gold",
+		"questLoseResult" : "You enter the old house and fall through the floor.  You are pissing blood.  You should really go to the hospital",
 		"questXp" : 500,
 		"questGold" : 1000,
 		"chanceOfDamage" : 100
@@ -175,9 +175,9 @@ var exploreQuests = {
 	"questFive" : {
 		"questClass": "Explore",
 		"questName" : "Oh, a secret passage",
-		"questObjective" : "Some text",
-		"questWinResult" : "Some text",
-		"questLoseResult" : "Some text",
+		"questObjective" : "You hear from one of the villagers that there is a secret passage by the old mill that will lead you into the castle",
+		"questWinResult" : "You find the secret passage behind and old bookshelf.  It leads to the castle vault.  Pay Dirt!!!",
+		"questLoseResult" : "You search all day and find nothing.  Then you realize that the whole village has been watching and laughing at you.  You are inflicted damage from a bruised ego!",
 		"questXp" : 500,
 		"questGold" : 1000,
 		"chanceOfDamage" : 100
@@ -185,9 +185,9 @@ var exploreQuests = {
 	"questSix" : {
 		"questClass": "Explore",
 		"questName" : "Infiltrate the facility.",
-		"questObjective" : "Some text",
-		"questWinResult" : "Some text",
-		"questLoseResult" : "Some text",
+		"questObjective" : "You found the secret passage and are deep inside the facility.  The village said there would be a great treasure beyond any amount of gold.",
+		"questWinResult" : "You explore and find famous adult film star Alexis Texas being held prisoner.  You unlock the chains and are GREATLY rewarded!  Way better then gold!!",
+		"questLoseResult" : "You fall through a trap are attacked by alligators.  You'd be luck to survive...  You don't!",
 		"questXp" : 500,
 		"questGold" : 1000,
 		"chanceOfDamage" : 100
@@ -696,6 +696,6 @@ function displayExploreQuest(){
 	document.getElementById("exploreQuestTwo").innerHTML = exploreQuestLine.questTwo.description;
 	document.getElementById("exploreQuestThree").innerHTML = exploreQuestLine.questThree.description;
 	document.getElementById("exploreQuestFour").innerHTML = exploreQuestLine.questFour.description;
-	doucment.getElementById("exploreQuestFive").innerHTML = exploreQuestLine.questFive.description;
+	document.getElementById("exploreQuestFive").innerHTML = exploreQuestLine.questFive.description;
 	document.getElementById("exploreQuestSix").innerHTML = exploreQuestLine.questSix.description;
 }
