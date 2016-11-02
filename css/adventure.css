@@ -14,7 +14,7 @@ h4
 }
 .div-with-bg
 {
-    background-image: url("../content/bkg1.jpg");
+    background-image: url("../content/bkg1.jpg"), url("../content/bkg2.jpg"), url("../content/bkg3.jpg"), url("../content/bkg4.jpg");
     background-size:100% 100%;
     background-attachment: fixed;
 }
@@ -28,10 +28,11 @@ p
 {
 	text-align:center;
 	margin:auto;
+	padding-bottom: 10px;
 }
 #div-fill
 {
-	height: 700px;
+	height: 1000px;
 	width: 100%;	
     
 }
@@ -39,6 +40,10 @@ p
 {
 	margin:auto;
   	display:block;
+}
+#button
+{
+	color: black;
 }
 ul
 {
@@ -53,4 +58,8 @@ li
 button
 {
 	color: black;
+}
+#introduction
+{
+	padding-bottom: 2%;
 }
