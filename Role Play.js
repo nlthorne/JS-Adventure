@@ -286,6 +286,12 @@ function Player(){
 	this.getPlayerLevel = function(){
 		return playerLevel;
 	};
+	this.getTotalScore = function(){
+		var calculateScore = function(){
+			return gold * experiencePoints + healthPoints;
+		};
+		return calculateScore;
+	};
 }
 function setName(name){
 	this.name = name;
