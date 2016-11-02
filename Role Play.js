@@ -209,20 +209,16 @@ function getUser(){
 	setName.call(user, userName);
 	return user;
 }
+
 function choosePath(choice, user){
-	if (choice == "cowboy"){
-		chooseQuest();
-	}
-	else if (choice == "ninja"){
-		chooseQuest();
-	}
-	else if (choice == "alien"){
-		chooseQuest(choice, user);
-	}
+	this.user = user;
+	this.choice = choice;
 }
 
-function chooseQuest(decision, questType, nextQuest, user){
+function chooseQuest(user, questType, decision, nextQuest){
+	choosePath.call(user);
 	var completedQuests = [];
+	displayPlayerInformation(user);
 	do{
 		if (questType == "resources"){
 		for (var i=0; i < resourceQuestLine.length; i++){
@@ -312,10 +308,10 @@ function chooseQuest(decision, questType, nextQuest, user){
 					return undefined;
 				}
 			}
-		}checkIfAlive();
-	}
+		}
+	}checkIfAlive();
 	}while(checkIfAlive() = false);
-	document.getElementById("Gameover").innerHTML = (user.name + " Score: \n\n" + user.getScore);
+	document.getElementById("gameOver").innerHTML = (user.name + " Score: \n\n" + user.getScore());
 }
 
 function computeQuestOutcome(questWinResult, questLoseResult, questXp, questGold, chanceOfDamage, user){
@@ -342,7 +338,7 @@ function computeQuestOutcome(questWinResult, questLoseResult, questXp, questGold
 	}
 }
 
-function checkIfAlive(){
+function checkIfAlive(user){
 	this.isAlive = true
 		if (user.getHealth() <= 0){
 			this.isAlive = false;
@@ -431,24 +427,19 @@ function setRangesForNinja(shortRange, longRange){
 function cowboy(user){
 	user = getUser();
 	this.name = "Cowboy";
-	this.description = ("A cowboy's weapon of choice is a six-shoter and has an outstanding long range shot");
+	this.description = ("A cowboy's weapon of choice is a six-shoter and has an outstanding long range shot \n\nAttributes: \n+10 to short range \n-5 to long range");
 	var shortRange = 5;
 	var longRange = 10;
 	
 	setRanges.apply(user, [shortRange, longRange]);
 	
-	choosePath("cowboy");
+	choosePath("cowboy", user);
 }
 
 function ninja(user){
 	user = getUser();
 	this.name = "Ninja";
-<<<<<<< HEAD
-	this.description = "Ninja description \n\nAttributes: \n+10 to short range \n-5 to long range";
-	user.addShortRange(10);
-	user.depleteLongRange(5);
-=======
-	this.description = "A ninja is a mercenary, highly trained in martial arts and stealth (ninjutsu) it's advantage is in short range attacks.  You won't know what hit you.";
+	this.description = "A ninja is a mercenary, highly trained in martial arts and stealth (ninjutsu) it's advantage is in short range attacks.  You won't know what hit you. \n\nAttributes: \n+10 to short range \n-5 to long range";
 
 	//user.addShortRange(10);
 	//user.depleteLongRange(5);	
@@ -459,9 +450,8 @@ function ninja(user){
 	
 	var setRanges = setRangesForNinja.bind(user);
 	setRanges(shortRange, longRange);
->>>>>>> origin/master
 	
-	choosePath("ninja");
+	choosePath("ninja", user);
 
 }
 
@@ -471,7 +461,7 @@ function alien(user){
 	this.description = "Alien's are physically imposing.  They stand 8' tall and weigh 375 lbs.  Their weapon of choice is the probe.  They are very hard to kill!";
 	user.addHealth(10);
 	
-	choosePath("alien");
+	choosePath("alien", user);
 }
 
 // Sub-Classes
@@ -754,12 +744,12 @@ function Quest(id, questClass, questName, questObjective, questWinResult, questL
 }
 
 function displayPlayerInformation(user){
-	document.getElementById("playerName").innerHTML = (user.getName);
-	document.getElementById("playerHealth").innerHTML = (user.getHealth);
-	document.getElementById("playerGold").innerHTML = (user.getGold);
-	document.getElementById("playerXp").innerHTML = (user.getExperiencePoints);
-	document.getElementById("playerShortRange").innerHTML = (user.getShortRange);
-	document.getElementById("playerLongRange").innerHTML = (user.getLongRange);
+	document.getElementById("playerName").innerHTML = "Name: " + user.getName();
+	document.getElementById("playerHealth").innerHTML = "Health: " + user.getHealth();
+	document.getElementById("playerGold").innerHTML = "Gold: " + user.getGold();
+	document.getElementById("playerXp").innerHTML = "Experience: " + user.getExperiencePoints();
+	document.getElementById("playerShortRange").innerHTML = "Short Range: " + user.getShortRange();
+	document.getElementById("playerLongRange").innerHTML = "Long Range: " + user.getLongRange();
 }
 
 function startQuest(){
