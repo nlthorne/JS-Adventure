@@ -393,6 +393,11 @@ function setRanges(shortRange, longRange){
 	this.depleteShortRange(shortRange);
 	this.addLongRange(longRange);
 }
+
+function setRangesForNinja(shortRange, longRange){
+	this.addShortRange(shortRange);
+	this.depleteLongRange(longRange);
+}
 // Classes
 function cowboy(user){
 	this.name = "Cowboy";
@@ -408,10 +413,19 @@ function cowboy(user){
 function ninja(user){
 	this.name = "Ninja";
 	this.description = "Ninja description \n\nAttributes: \n+10 to short range \n-5 to long range";
+<<<<<<< HEAD
 	user.addShortRange(10);
 	user.depleteLongRange(5);
 	
 	choosePath("ninja");
+=======
+
+	var shortRange = 10;
+	var longRange = 5;
+	
+	var setRanges = setRangesForNinja.bind(user);
+	setRanges(shortRange, longRange);
+>>>>>>> origin/master
 }
 
 function alien(user){
