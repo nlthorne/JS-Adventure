@@ -201,56 +201,123 @@ var fightingQuestLine = [];
 var exploreQuestLine = [];
 
 questArray();
-choosePath();
-
-function choosePath(){
+getUser();
+function getUser(){
 	let userName = prompt("Enter a username: ");
 	let user = new Player();
 	
 	setName.call(user, userName);
-	
-	var choice = prompt("Choose a path " + user.name + ": \n\nCowboy \nNinja \nAlien");
-	var confirmChoice = confirm("You chose the " + choice + " class. \n\nClass description: \n" + classDescriptionConvert(choice) + "\n\nPress OK to continue or Cancel to choose a different class");
-	if (confirmChoice == true){
-		txt = "You pressed OK!";
-	} else {
-		txt = "You pressed Cancel!";
-		choosePath();
+}
+function choosePath(choice, decision, user){
+	if (choice == "cowboy"){
+		document.getElementById("classDescription").innerHTML = cowboy.description;
+		switch(decision){
+			case "continue":
+			Object.assign(new cowboy(user));
+			chooseQuest();
+			break;
+			
+			case "no":
+			window.history.back();
+			break;
+		}
 	}
-	switch(choice.toLowerCase()){
-		case "cowboy":
-		Object.assign(new cowboy(user));
-		storyline(user);
-		break;
-		
-		case "ninja":
-		Object.assign(new ninja(user));
-		break;
-		
-		case "alien":
-		Object.assign(new alien(user));
-		break;
-		
-		default:
-		alert("Invalid selection");
-		choosePath()
-		break;
+	else if (choice == "ninja"){
+		document.getElementById("classDescription").innerHTML = ninja.description;
+		switch(decision){
+			case "continue":
+			Object.assign(new ninja(user));
+			chooseQuest();
+			break;
+			
+			case "no":
+			window.history.back();
+			break;
+		}
+	}
+	else if (choice == "alien"){
+		document.getElementById("classDescription").innerHTML = alien.description;
+		switch(decision){
+			case "continue":
+			Object.assign(new alien(user));
+			chooseQuest();
+			break;
+			
+			case "no":
+			window.history.back();
+			break;
+		}
 	}
 }
 
-function classDescriptionConvert(choice){
-	if (choice === "cowboy"){
-		return cowboy.description;
+function chooseQuest(decision, questType){
+	var completedQuests = [];
+	
+	if (questType == "resources"){
+		for (var i=0; i < resourceQuestLine.length; i++){
+			for (var j=0; j++ < completedQuests.length; j++){
+				if (resourceQuestLine[i].id != completedQuests[j].id && resourceQuestLine[i].questClass != completedQuests[j].questClass){
+					document.getElementById("questName").innerHTML = resourceQuestLine[i].questName;
+					document.getElementById("questDescription").innerHTML = resourceQuestLine[i].questObjective;
+					switch (decision){
+						case "continue":
+						completedQuests.push(resourceQuestLine[i]);
+						// get results from execution
+						break;
+			
+						case "back":
+						chooseQuest(decision, questType);
+						break;
+					}			
+				}else{
+					return undefined;
+				}
+			}
+		}
 	}
-	else if (choice === "ninja"){
-		return ninja.description;
+	else if (questType == "fighting"){
+		for (var i=0; i < fightingQuestLine.length; i++){
+			for (var j=0; j < completedQuests.length; j++){
+				if (fightingQuestLine[i].id != completedQuests[j].id && fightingQuestLine[i].questClass != completedQuests[j].questClass){
+					document.getElementById("questName").innerHTML = fightingQuestLine[i].questName;
+					document.getElementById("questDescription").innerHTML = fightingQuestLine[i].questObjective;
+					switch (decision){
+						case "continue":
+						completedQuests.push(fightingQuestLine[i]);
+						// get results from execution
+						break;
+						
+						case "back":
+						window.history.back();
+						break;
+					}
+				}else{
+					return undefined;
+				}
+			}
+		}
 	}
-	else if (choice === "alien"){
-		return alien.description;
-	}
-	else{
-		alert("Invalid selection");
-		choosePath();
+	else if (questType == "explore"){
+		for (var i=0; i < exploreQuestLine.length; i++){
+			for (var j=0; j < completedQuests.length; j++){
+				if (exploreQuestLine[i].id != completedQuests[j].id && exploreQuestLine[i].questClass != completedQuests[j].questClass){
+					document.getElementById("questName").innerHTML = exploreQuestLine[i].questName;
+					document.getElementById("questDescription").innerHTML = exploreQuestLine[i].questObjective;
+					switch (decision){
+						case "continue":
+						completedQuests.push(exploreQuestLine[i]);
+						// get results from execution
+						break;
+						
+						case "back":
+						window.history.back();
+						break;
+					}
+				}else{
+					return undefined;
+				}
+			}
+		}
 	}
 }
 
@@ -262,6 +329,7 @@ function Player(){
 	var experiencePoints = 0;
 	var shortRange = 50;
 	var longRange = 50;
+	var playerScore = 0;
 	
 	Player.prototype.getName = function(){
 		return this.name;
@@ -311,11 +379,11 @@ function Player(){
 	this.getPlayerLevel = function(){
 		return playerLevel;
 	};
-	this.getTotalScore = function(){
-		var calculateScore = function(){
-			return gold * experiencePoints + healthPoints;
-		};
-		return calculateScore;
+	this.calculateScore = function(){
+		playerScore += ((gold*experiencePoints) + healthPoints);
+	}
+	this.getScore = function(){
+		return playerScore;
 	};
 }
 function setName(name){
@@ -332,7 +400,9 @@ function cowboy(user){
 	var shortRange = 5;
 	var longRange = 10;
 	
-	setRanges.apply(user, [shortRange, longRange]);	
+	setRanges.apply(user, [shortRange, longRange]);
+	
+	choosePath("cowboy");
 }
 
 function ninja(user){
@@ -340,36 +410,18 @@ function ninja(user){
 	this.description = "Ninja description \n\nAttributes: \n+10 to short range \n-5 to long range";
 	user.addShortRange(10);
 	user.depleteLongRange(5);
+	
+	choosePath("ninja");
 }
 
 function alien(user){
 	this.name = "Alien";
 	this.description = "Alien description \n\nAttributes: \n+10 to player health";
 	user.addHealth(10);
+	
+	choosePath("alien");
 }
 
-function chooseQuest(quest, questOption){
-	if (questOption == "resources"){
-		
-	}
-	switch (questOption){
-		case "resources":
-		getNewQuest(resources);
-		break;
-		
-		case "fighting":
-		getNewQuest(fighting);
-		break;
-		
-		case "explore":
-		getNewQuest(explore);
-		break;
-		
-		default:
-		chooseQuest(quest, questNumber);
-		break;
-	}
-}
 // Sub-Classes
 function chooseSubClass(user){
 	var choice = alert("You are now a warrior! \nYou can now increase your skills.");
