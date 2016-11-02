@@ -194,13 +194,16 @@ var exploreQuests = {
 	}
 };
 
-//document.getElementById("run").innerHTML
-
 var resourceQuestLine = [];
 var fightingQuestLine = [];
 var exploreQuestLine = [];
 
 questArray();
+function getOption(){
+	document.getElementsByName("Alien").innerHTML = alien();
+	document.getElementsByName("Cowboy").innerHTML = cowboy();
+	document.getElementsByName("Ninja").innerHTML = ninja();
+}
 
 function getUser(){
 	let userName = prompt("Enter a username: ");
@@ -210,13 +213,13 @@ function getUser(){
 	return user;
 }
 
-function choosePath(choice, user){
+function choosePath(user, choice){
 	this.user = user;
 	this.choice = choice;
 }
 
-function chooseQuest(user, questType, decision, nextQuest){
-	choosePath.call(user);
+function chooseQuest(questType, decision, nextQuest, user){
+	user = choosePath.call(user);
 	var completedQuests = [];
 	displayPlayerInformation(user);
 	do{
