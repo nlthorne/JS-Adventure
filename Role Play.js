@@ -8,8 +8,9 @@ var resourceQuests = {
 	"questOne" : {
 		"questClass": "Resource",
 		"questName": "Gather food",
-		"questObjective": "Some text",
-		"questResult": "Some text",
+		"questObjective": "It is early in the morning and you feel a rumble in your stomach. You believe that you are hungry but are unsure where to get food. While wandering through the woods you come across a batch of off-colored berries. Do you want to pick the berries to fight the hungry?",
+		"questWinResult": "The berries satisfy your hunger and feel much better!",
+		"questLoseResult" : "The berries are poisionous! You being to feel sick and throw up every where.",
 		"questXp": 50,
 		"questGold": 20,
 		"chanceOfDamage": 5
@@ -17,8 +18,9 @@ var resourceQuests = {
 	"questTwo" : {
 		"questClass": "Resource",
 		"questName": "Gather water",
-		"questObjective": "Some text",
-		"questResult": "Some text",
+		"questObjective": "Parched is an understatement and you must find water. You come across a riverbend of a darkish color and can not see the bottom. Do you wish to drink from the riverbend?",
+		"questWinResult": "The water is refreshing and you are no longer thirsty. Today is a lovely, lovely day.",
+		"questLoseResult" : "The water from the river bend tastes terrible! You look down the bend and see that it is attached to the city sewage.",
 		"questXp": 75,
 		"questGold": 35,
 		"chanceOfDamage": 10
@@ -26,8 +28,9 @@ var resourceQuests = {
 	"questThree" : {
 		"questClass": "Resource",
 		"questName": "Gather wood",
-		"questObjective": "Some text",
-		"questResult": "Some text",
+		"questObjective": "The day has turned to night and you must gather wood to create a fire as the temperature is dropping at a rapid pace. You hear howling and screeching in the woods. Do you want to go and gather wood for the night?",
+		"questWinResult": "A pack of wolves surround you. While waving your hands in the air, a giant bear storms through the area and takes out the wolves and lets you be. Although the encounter was close, you leave with no damage and gather enough wood for the month. Congratulations!",
+		"questLoseResult" : "While chopping down a tree, a pack of wolves surround ready to attack. Although you were able to fend them off, you barely leave the wretched woods with your life.",
 		"questXp": 100,
 		"questGold": 50,
 		"chanceOfDamage": 15
@@ -35,8 +38,9 @@ var resourceQuests = {
 	"questFour" : {
 		"questClass": "Resource",
 		"questName": "Build weapon",
-		"questObjective": "Some text",
-		"questResult": "Some text",
+		"questObjective": "After the previous encounter in the woods, you decide it is time to create a weapon to protect yourself from the evils. With little experience in weapon crafting, incidents are bound to happen. Would you like to continue to create a weapon?",
+		"questWinResult": "Other than a bruised thumb from swinging the hammer, you have successfully created a weapon to carry with you!",
+		"questLoseResult" : "As expected, the weapon you were creating is slightly malfunctioning. During a test to see how it works, the weapon explodes in your hands and pieces pierce your skin.",
 		"questXp": 125,
 		"questGold": 75,
 		"chanceOfDamage": 35
@@ -44,8 +48,9 @@ var resourceQuests = {
 	"questFive" : {
 		"questClass": "Resource",
 		"questName": "Gather information",
-		"questObjective": "Some text",
-		"questResult": "Some text",
+		"questObjective": "You hear that an evil is taking over the country and need to know more about what is happening. You must sneak into the local library, and Google what exactly this 'Evil' is and how to stop it. Do you dare risk your own life to save the world?",
+		"questWinResult": "Sneaking behind trees and tumbling through bushes, you finally reach your destination. Breaking the glass to the back door, you realize it was left unlocked and walk in. After your search for 'Evil', you quickly realize it is not just one evil, but two...",
+		"questLoseResult" : "SPOTTED! You are not so slick young padawan! The police arrive and you spend a night in jail with your new 'best friend', Bubba.",
 		"questXp": 200,
 		"questGold": 150,
 		"chanceOfDamage": 50
@@ -53,8 +58,9 @@ var resourceQuests = {
 	"questSix" : {
 		"questClass": "Resource",
 		"questName": "Final Plan",
-		"questObjective": "Some text",
-		"questResult": "Some text",
+		"questObjective": "You must defeat the 'Evil' but you need a good plan to do such. After gathering all the information of what you know on the 'Evil' you realize this will not be as easy as it sounds. Do you want to come up with a grand final plan to take them down?",
+		"questWinResult": "The plan is final and all possibily of threat has been eliminated.",
+		"questLoseResult" : "The plan looks....well....terrible. You realize you are terrible at creating plans and find the closest bar. Waking up you realize you are in a hospital with alcohol poisioning.",
 		"questXp": 350,
 		"questGold": 275,
 		"chanceOfDamage": 35
@@ -65,8 +71,9 @@ var fightingQuests = {
 	"questOne" : {
 		"questClass": "Fighting",
 		"questName" : "The training begins...",
-		"questObjective" : "Some text",
-		"questResult" : "Some text",
+		"questObjective" : "You need to begin your training! You find a large stick and need to head into the woods to practice hitting a tree. Do you want to go into the dangers of the woods to practice?",
+		"questWinResult" : "You wack away at a tree for hours until the tree is ravished and torn. You can accomplish anything!",
+		"questLoseResult" : "While practicing, you sprain your wrist when you strike the tree too hard.",
 		"questXp" : 50,
 		"questGold" : 50,
 		"chanceOfDamage" : 5
@@ -74,8 +81,9 @@ var fightingQuests = {
 	"questTwo" : {
 		"questClass": "Fighting",
 		"questName" : "Kill the boar!",
-		"questObjective" : "Some text",
-		"questResult" : "Some text",
+		"questObjective" : "Feeling confident, you decide that you need to find a real opponent. 'A BOAR!' you scream aloud. Do you want to find a boar to increase your fighting techniques?",
+		"questWinResult" : "You find a boar and raise your mighty stick in the air. 'Prepare for death' is what you bellow at the boar and attack. You have successfully eliminated the opponent.",
+		"questLoseResult" : "Searching for a boar is not easy to find, but wolves are! Finding a wolf was easy enough, but not so easy to defeat. You leave defeated, battered, and bruised.",
 		"questXp" : 75,
 		"questGold" : 75,
 		"chanceOfDamage" : 10
@@ -83,8 +91,9 @@ var fightingQuests = {
 	"questThree" : {
 		"questClass": "Fighting",
 		"questName" : "A new opponent arrives",
-		"questObjective" : "Some text",
-		"questResult" : "Some text",
+		"questObjective" : "You are abruptly awoken by a sound. Someone is nearby, but why here? Crawling to the top of the hill you spot three men in black suits. 'OVER THERE' one man says while pointing a finger at you. Do you stand and fight or run?",
+		"questWinResult" : "Some text",
+		"questLoseResult" : "Some text",
 		"questXp" : 100,
 		"questGold" : 150,
 		"chanceOfDamage" : 20
@@ -93,7 +102,8 @@ var fightingQuests = {
 		"questClass": "Fighting",
 		"questName" : "Get to the choppa!",
 		"questObjective" : "Some text",
-		"questResult" : "Some text",
+		"questWinResult" : "Some text",
+		"questLoseResult" : "Some text",
 		"questXp" : 150,
 		"questGold" : 250,
 		"chanceOfDamage" : 35
@@ -102,7 +112,8 @@ var fightingQuests = {
 		"questClass": "Fighting",
 		"questName" : "Take out the paparazzi...",
 		"questObjective" : "Some text",
-		"questResult" : "Some text",
+		"questWinResult" : "Some text",
+		"questLoseResult" : "Some text",
 		"questXp" : 300,
 		"questGold" : 500,
 		"chanceOfDamage" : 65
@@ -111,7 +122,8 @@ var fightingQuests = {
 		"questClass": "Fighting",
 		"questName" : "Free the country!",
 		"questObjective" : "Some text",
-		"questResult" : "Some text",
+		"questWinResult" : "Some text",
+		"questLoseResult" : "Some text",
 		"questXp" : 500,
 		"questGold" : 1000,
 		"chanceOfDamage" : 100
@@ -123,7 +135,8 @@ var exploreQuests = {
 		"questClass": "Explore",
 		"questName" : "What's over there?",
 		"questObjective" : "Some text",
-		"questResult" : "Some text",
+		"questWinResult" : "Some text",
+		"questLoseResult" : "Some text",
 		"questXp" : 500,
 		"questGold" : 1000,
 		"chanceOfDamage" : 100
@@ -132,7 +145,8 @@ var exploreQuests = {
 		"questClass": "Explore",
 		"questName" : "Ain't nobody got time for dat!",
 		"questObjective" : "Some text",
-		"questResult" : "Some text",
+		"questWinResult" : "Some text",
+		"questLoseResult" : "Some text",
 		"questXp" : 500,
 		"questGold" : 1000,
 		"chanceOfDamage" : 100
@@ -141,7 +155,8 @@ var exploreQuests = {
 		"questClass": "Explore",
 		"questName" : "What's in the box!",
 		"questObjective" : "Some text",
-		"questResult" : "Some text",
+		"questWinResult" : "Some text",
+		"questLoseResult" : "Some text",
 		"questXp" : 500,
 		"questGold" : 1000,
 		"chanceOfDamage" : 100
@@ -150,7 +165,8 @@ var exploreQuests = {
 		"questClass": "Explore",
 		"questName" : "Is... is that what I think it is?",
 		"questObjective" : "Some text",
-		"questResult" : "Some text",
+		"questWinResult" : "Some text",
+		"questLoseResult" : "Some text",
 		"questXp" : 500,
 		"questGold" : 1000,
 		"chanceOfDamage" : 100
@@ -159,7 +175,8 @@ var exploreQuests = {
 		"questClass": "Explore",
 		"questName" : "Oh, a secret passage",
 		"questObjective" : "Some text",
-		"questResult" : "Some text",
+		"questWinResult" : "Some text",
+		"questLoseResult" : "Some text",
 		"questXp" : 500,
 		"questGold" : 1000,
 		"chanceOfDamage" : 100
@@ -168,14 +185,20 @@ var exploreQuests = {
 		"questClass": "Explore",
 		"questName" : "Infiltrate the facility.",
 		"questObjective" : "Some text",
-		"questResult" : "Some text",
+		"questWinResult" : "Some text",
+		"questLoseResult" : "Some text",
 		"questXp" : 500,
 		"questGold" : 1000,
 		"chanceOfDamage" : 100
 	},
 };
-var quests = [];
-var completedQuests = [];
+
+//document.getElementById("run").innerHTML
+
+var resourceQuestLine = [];
+var fightingQuestLine = [];
+var exploreQuestLine = [];
+
 questArray();
 choosePath();
 
@@ -226,6 +249,7 @@ function classDescriptionConvert(choice){
 		choosePath();
 	}
 }
+
 function Player(name){
 	this.name = name;
 	var gold = 0;
@@ -316,6 +340,29 @@ function storyline(player1){
 		}
 	}
 	alert(quests[0].questXp);
+}
+
+function chooseQuest(quest, questNumber){
+	if (questOption == "resources"){
+		
+	}
+	switch (questOption){
+		case "resources":
+		getNewQuest(resources);
+		break;
+		
+		case "fighting":
+		getNewQuest(fighting);
+		break;
+		
+		case "explore":
+		getNewQuest(explore);
+		break;
+		
+		default:
+		chooseQuest(quest, questNumber);
+		break;
+	}
 }
 // Sub-Classes
 function chooseSubClass(user){
@@ -553,28 +600,6 @@ function completedQuests(user){
 	return nextQuest;
 }
 
-function questOptions(){
-	var choice = prompt("Choose one of three options: ");
-	switch(choice.toLowerCase()){
-		case "resources":
-		//does something
-		break;
-		
-		case "fight":
-		//does something else
-		break;
-	
-		case "explore":
-		// does something else
-		break;
-	
-		default:
-		alert("Invalid selection");
-		questOptions();
-		break;
-	}
-}
-
 function takeDamage(){
 	return damageTaken = Math.floor((playerLevel * fibonacci(1))/2);
 }
@@ -590,25 +615,26 @@ function fibonacci(nth){
 function questArray(){
 	var index = 0;
 	for(var key in resourceQuests){
-		quests[index] = new Quest(key, resourceQuests[key].questClass, resourceQuests[key].questName, resourceQuests[key].questObjective, resourceQuests[key].questResult, resourceQuests[key].questXp, resourceQuests[key].questGold, resourceQuests[key].chanceOfDamage);
+		resourceQuestLine[index] = new Quest(key, resourceQuests[key].questClass, resourceQuests[key].questName, resourceQuests[key].questObjective, resourceQuests[key].questWinResult, resourceQuests[key].questLoseResult, resourceQuests[key].questXp, resourceQuests[key].questGold, resourceQuests[key].chanceOfDamage);
 		index++;
 	}
 	for(var key in fightingQuests){
-		quests[index] = new Quest(key, fightingQuests[key].questClass, fightingQuests[key].questName, fightingQuests[key].questObjective, fightingQuests[key].questResult, fightingQuests[key].questXp, fightingQuests[key].questGold, fightingQuests[key].chanceOfDamage);
+		fightingQuestLine[index] = new Quest(key, fightingQuests[key].questClass, fightingQuests[key].questName, fightingQuests[key].questObjective, fightingQuests[key].questWinResult, resourceQuests[key].questLoseResult, fightingQuests[key].questXp, fightingQuests[key].questGold, fightingQuests[key].chanceOfDamage);
 		index++;
 	}
 	for(var key in exploreQuests){
-		quests[index] = new Quest(key, exploreQuests[key].questClass, exploreQuests[key].questName, exploreQuests[key].questObjective, exploreQuests[key].questResult, exploreQuests[key].questXp, exploreQuests[key].questGold, exploreQuests[key].chanceOfDamage);
+		exploreQuestLine[index] = new Quest(key, exploreQuests[key].questClass, exploreQuests[key].questName, exploreQuests[key].questObjective, exploreQuests[key].questWinResult, resourceQuests[key].questLoseResult, exploreQuests[key].questXp, exploreQuests[key].questGold, exploreQuests[key].chanceOfDamage);
 		index++;
 	}
 }
 
-function Quest(id, questClass, questName, questObjective, questResult, questXp, questGold, chanceOfDamage){
+function Quest(id, questClass, questName, questObjective, questWinResult, questLoseResult, questXp, questGold, chanceOfDamage){
 	this.id = id;
 	this.questClass = questClass
 	this.questName = questName;
 	this.questObjective = questObjective;
-	this.questResult = questResult;
+	this.questWinResult = questWinResult;
+	this.questLoseResult = questLoseResult;
 	this.questXp = questXp;
 	this.questGold = questGold;
 	this.chanceOfDamage = chanceOfDamage;
