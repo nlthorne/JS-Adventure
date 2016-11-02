@@ -182,8 +182,9 @@ choosePath();
 function choosePath(){
 	let userName = prompt("Enter a username: ");
 	let user = new Player();
+	
 	setName.call(user, userName);
-	alert(user.name);
+	
 	var choice = prompt("Choose a path " + user.name + ": \n\nCowboy \nNinja \nAlien");
 	var confirmChoice = confirm("You chose the " + choice + " class. \n\nClass description: \n" + classDescriptionConvert(choice) + "\n\nPress OK to continue or Cancel to choose a different class");
 	if (confirmChoice == true){
@@ -289,13 +290,18 @@ function Player(){
 function setName(name){
 	this.name = name;
 }
+function setRanges(shortRange, longRange){
+	this.depleteShortRange(shortRange);
+	this.addLongRange(longRange);
+}
 // Classes
 function cowboy(user){
 	this.name = "Cowboy";
 	this.description = ("Cowboy description \n\nAttributes: \n-5 to short range \n+10 to long range");
-	user.depleteShortRange(5);
-	user.addLongRange(10);
-
+	var shortRange = 5;
+	var longRange = 10;
+	
+	setRanges.apply(user, [shortRange, longRange]);	
 }
 
 function ninja(user){
