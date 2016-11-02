@@ -4,6 +4,7 @@
 // Upon death, score is determined by the amount of gold accumulated.
 // Each player start at 100 health points which decrement (non-linearly) over the course of the game.
 // Must be at least 5 minutes of gameplay.
+
 var resourceQuests = {
 	"questOne" : {
 		"questClass": "Resource",
@@ -637,10 +638,12 @@ function questArray(){
 		resourceQuestLine[index] = new Quest(key, resourceQuests[key].questClass, resourceQuests[key].questName, resourceQuests[key].questObjective, resourceQuests[key].questWinResult, resourceQuests[key].questLoseResult, resourceQuests[key].questXp, resourceQuests[key].questGold, resourceQuests[key].chanceOfDamage);
 		index++;
 	}
+	index = 0;
 	for(var key in fightingQuests){
 		fightingQuestLine[index] = new Quest(key, fightingQuests[key].questClass, fightingQuests[key].questName, fightingQuests[key].questObjective, fightingQuests[key].questWinResult, resourceQuests[key].questLoseResult, fightingQuests[key].questXp, fightingQuests[key].questGold, fightingQuests[key].chanceOfDamage);
 		index++;
 	}
+	index = 0;
 	for(var key in exploreQuests){
 		exploreQuestLine[index] = new Quest(key, exploreQuests[key].questClass, exploreQuests[key].questName, exploreQuests[key].questObjective, exploreQuests[key].questWinResult, resourceQuests[key].questLoseResult, exploreQuests[key].questXp, exploreQuests[key].questGold, exploreQuests[key].chanceOfDamage);
 		index++;
