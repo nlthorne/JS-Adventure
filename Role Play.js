@@ -250,10 +250,11 @@ function choosePath(choice, decision, user){
 	}
 }
 
-function chooseQuest(decision, questType){
+function chooseQuest(decision, questType, nextQuest, user){
 	var completedQuests = [];
-	
-	if (questType == "resources"){
+	var continueQuest;
+	do{
+		if (questType == "resources"){
 		for (var i=0; i < resourceQuestLine.length; i++){
 			for (var j=0; j++ < completedQuests.length; j++){
 				if (resourceQuestLine[i].id != completedQuests[j].id && resourceQuestLine[i].questClass != completedQuests[j].questClass){
@@ -262,11 +263,19 @@ function chooseQuest(decision, questType){
 					switch (decision){
 						case "continue":
 						completedQuests.push(resourceQuestLine[i]);
-						// get results from execution
+						computeQuestOutcome(resourceQuestLine[i].questWinResult, resourceQuestLine[i].questLoseResult, resourceQuestLine[i].questXp, resourceQuestLine[i].questGold, resourceQuestLine[i].chanceOfDamage, user);
+						switch (nextQuest){
+							case: "continue":
+							continue;
+							
+							case: "quit":
+							continueQuest = "quit";
+							break;
+						}
 						break;
 			
 						case "back":
-						chooseQuest(decision, questType);
+						window.history.back();
 						break;
 					}			
 				}else{
@@ -284,7 +293,15 @@ function chooseQuest(decision, questType){
 					switch (decision){
 						case "continue":
 						completedQuests.push(fightingQuestLine[i]);
-						// get results from execution
+						computeQuestOutcome(fightingQuestLine[i].questWinResult, fightingQuestLine[i].questLoseResult, fightingQuestLine[i].questXp, fightingQuestLine[i].questGold, fightingQuestLine[i].chanceOfDamage, user);
+						switch (nextQuest){
+							case: "continue":
+							continue;
+							
+							case: "quit":
+							continueQuest = "quit";
+							break;
+						}
 						break;
 						
 						case "back":
@@ -306,7 +323,15 @@ function chooseQuest(decision, questType){
 					switch (decision){
 						case "continue":
 						completedQuests.push(exploreQuestLine[i]);
-						// get results from execution
+						computeQuestOutcome(exploreQuestLine[i].questWinResult, exploreQuestLine[i].questLoseResult, exploreQuestLine[i].questXp, exploreQuestLine[i].questGold, exploreQuestLine[i].chanceOfDamage, user);
+						switch (nextQuest){
+							case: "continue":
+							continue;
+							
+							case: "quit":
+							continueQuest = "quit";
+							break;
+						}
 						break;
 						
 						case "back":
@@ -319,6 +344,40 @@ function chooseQuest(decision, questType){
 			}
 		}
 	}
+	}while(continueQuest != "quit");
+	document.getElementById("Gameover").innerHTML = (user.name + " Score: \n\n" + user.getScore);
+}
+
+function computeQuestOutcome(questWinResult, questLoseResult, questXp, questGold, chanceOfDamage, user){
+	var battleType = Math.floor(Math.random()*100)+1);
+	if (battleType <= 50){
+		if (chanceOfDamage <= user.getShortRange){
+			document.getElementById("questResult").innerHTML = questWinResult;
+			user.getGold(questGold);
+			user.getExperiencePoints(questXp);
+		}else{
+			document.getElementById("questResult").innerHTML = questLoseResult;
+			user.getExperiencePoints(questXp/2);
+		}
+	}
+	else if (battleType > 50){
+		if (chanceOfDamage <= user.getLongRange){
+			document.getElementById("questResult").innerHTML = questWinResult;
+			user.getGold(questGold);
+			user.getExperiencePoints(questXp);
+		}else{
+			document.getElementById("questResult").innerHTML = questLoseResult;
+			user.getExperiencePoints(questXp/2);
+		}
+	}
+}
+
+function checkIfAlive(){
+	this.isAlive = true
+		if (user.getHealth() <= 0){
+			this.isAlive = false;
+		}
+	return this.isAlive;
 }
 
 function Player(){
