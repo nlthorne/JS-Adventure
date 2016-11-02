@@ -180,8 +180,10 @@ questArray();
 choosePath();
 
 function choosePath(){
-	let user = prompt("Enter a username: ");
-	user = new Player(user);
+	let userName = prompt("Enter a username: ");
+	let user = new Player();
+	setName.call(user, userName);
+	alert(user.name);
 	var choice = prompt("Choose a path " + user.name + ": \n\nCowboy \nNinja \nAlien");
 	var confirmChoice = confirm("You chose the " + choice + " class. \n\nClass description: \n" + classDescriptionConvert(choice) + "\n\nPress OK to continue or Cancel to choose a different class");
 	if (confirmChoice == true){
@@ -226,8 +228,8 @@ function classDescriptionConvert(choice){
 		choosePath();
 	}
 }
-function Player(name){
-	this.name = name;
+function Player(){
+	this.name;
 	var gold = 0;
 	var healthPoints = 100;
 	var playerLevel = 0;
@@ -284,13 +286,16 @@ function Player(name){
 		return playerLevel;
 	};
 }
+function setName(name){
+	this.name = name;
+}
 // Classes
 function cowboy(user){
 	this.name = "Cowboy";
 	this.description = ("Cowboy description \n\nAttributes: \n-5 to short range \n+10 to long range");
 	user.depleteShortRange(5);
 	user.addLongRange(10);
-	
+
 }
 
 function ninja(user){
