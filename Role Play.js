@@ -102,9 +102,9 @@ var fightingQuests = {
 	"questFour" : {
 		"questClass": "Fighting",
 		"questName" : "Get to the choppa!",
-		"questObjective" : "You enter an arena and in front of you is Arnold \"Freakin\" Schwarzenegger.  This could get ugly very quickly!",
-		"questWinResult" : "Wait, isn't Arnold Schwarzenegger like 100 years old?  Yeah, that was a super easy fight.  You da champ!",
-		"questLoseResult" : "Unfortunatly this is the Terminator version of Arnie and he even learned karate.  It wasn't even close!",
+		"questObjective" : "Some text",
+		"questWinResult" : "Some text",
+		"questLoseResult" : "Some text",
 		"questXp" : 150,
 		"questGold" : 250,
 		"chanceOfDamage" : 35
@@ -112,9 +112,9 @@ var fightingQuests = {
 	"questFive" : {
 		"questClass": "Fighting",
 		"questName" : "Take out the paparazzi...",
-		"questObjective" : "You are surrounded by a group of paparazzi.  They are really Yakuza gangsters in disguise.  You are surrounded and there is no way out!",
-		"questWinResult" : "You disarm one of the members and obtain his machine gun.  You use him as a sheild while killing off his friends.",
-		"questLoseResult" : "You are no match for them.  They beat you up and then they take a picture of you and send it to your mother.  Pretty Rude!",
+		"questObjective" : "Some text",
+		"questWinResult" : "Some text",
+		"questLoseResult" : "Some text",
 		"questXp" : 300,
 		"questGold" : 500,
 		"chanceOfDamage" : 65
@@ -122,9 +122,9 @@ var fightingQuests = {
 	"questSix" : {
 		"questClass": "Fighting",
 		"questName" : "Free the country!",
-		"questObjective" : "This is the final stage, you must defeat the two headed Hillary-Trump beast to truely make America great again!",
-		"questWinResult" : "The Hillary-Trump beast punches you in the face but it's tiny little hands cannot hurt you!  You find the beast's weakness which is it's heart and slay the beast, thus freeing the people!",
-		"questLoseResult" : "The Hillary-Trump beast grabbed you by your pussy taking away all of your health points.  You wonder if this fight was rigged but we will never know?",
+		"questObjective" : "Some text",
+		"questWinResult" : "Some text",
+		"questLoseResult" : "Some text",
 		"questXp" : 500,
 		"questGold" : 1000,
 		"chanceOfDamage" : 100
@@ -135,9 +135,9 @@ var exploreQuests = {
 	"questOne" : {
 		"questClass": "Explore",
 		"questName" : "What's over there?",
-		"questObjective" : "Your objective for the first exploration quest is to gain experience, collect gold and keep on surviving!",
-		"questWinResult" : "You have gained experience and gold without taking any damage!",
-		"questLoseResult" : "You are attacked by a wolf, you survived but have taken some damage",
+		"questObjective" : "Some text",
+		"questWinResult" : "Some text",
+		"questLoseResult" : "Some text",
 		"questXp" : 500,
 		"questGold" : 1000,
 		"chanceOfDamage" : 100
@@ -145,9 +145,9 @@ var exploreQuests = {
 	"questTwo" : {
 		"questClass": "Explore",
 		"questName" : "Ain't nobody got time for dat!",
-		"questObjective" : "On your journey you are stopped by one of the villages peasants asking for a donation",
-		"questWinResult" : "You give the kind gentleman some of your gold.  He is really a prince who is so impressed by your generosity the he gives you 1000 gold",
-		"questLoseResult" : "You tell the begger to get a job and he sends his dogs on you, the dogs have inflicted damage",
+		"questObjective" : "Some text",
+		"questWinResult" : "Some text",
+		"questLoseResult" : "Some text",
 		"questXp" : 500,
 		"questGold" : 1000,
 		"chanceOfDamage" : 100
@@ -155,9 +155,9 @@ var exploreQuests = {
 	"questThree" : {
 		"questClass": "Explore",
 		"questName" : "What's in the box!",
-		"questObjective" : "You enter a cave and after exploring for about an hour you find a jewel encrusted box",
-		"questWinResult" : "You open the box and it contains 1000 gold!  Today is your lucky day!!",
-		"questLoseResult" : "You open the box and a snake jumps out at you.  You are bitten but manage to suck out the poison.  You are alive but have taken damage",
+		"questObjective" : "Some text",
+		"questWinResult" : "Some text",
+		"questLoseResult" : "Some text",
 		"questXp" : 500,
 		"questGold" : 1000,
 		"chanceOfDamage" : 100
@@ -165,9 +165,9 @@ var exploreQuests = {
 	"questFour" : {
 		"questClass": "Explore",
 		"questName" : "Is... is that what I think it is?",
-		"questObjective" : "While exploring in the desert you come across an abandoned house in the middle of nowhere, you go in to investigate",
-		"questWinResult" : "The house belongs to a great wizard, he invites you in and feeds you.  Then you stab him in the back and take his gold",
-		"questLoseResult" : "You enter the old house and fall through the floor.  You are pissing blood.  You should really go to the hospital",
+		"questObjective" : "Some text",
+		"questWinResult" : "Some text",
+		"questLoseResult" : "Some text",
 		"questXp" : 500,
 		"questGold" : 1000,
 		"chanceOfDamage" : 100
@@ -175,9 +175,9 @@ var exploreQuests = {
 	"questFive" : {
 		"questClass": "Explore",
 		"questName" : "Oh, a secret passage",
-		"questObjective" : "You hear from one of the villagers that there is a secret passage by the old mill that will lead you into the castle",
-		"questWinResult" : "You find the secret passage behind and old bookshelf.  It leads to the castle vault.  Pay Dirt!!!",
-		"questLoseResult" : "You search all day and find nothing.  Then you realize that the whole village has been watching and laughing at you.  You are inflicted damage from a bruised ego!",
+		"questObjective" : "Some text",
+		"questWinResult" : "Some text",
+		"questLoseResult" : "Some text",
 		"questXp" : 500,
 		"questGold" : 1000,
 		"chanceOfDamage" : 100
@@ -185,13 +185,13 @@ var exploreQuests = {
 	"questSix" : {
 		"questClass": "Explore",
 		"questName" : "Infiltrate the facility.",
-		"questObjective" : "You found the secret passage and are deep inside the facility.  The village said there would be a great treasure beyond any amount of gold.",
-		"questWinResult" : "You explore and find famous adult film star Alexis Texas being held prisoner.  You unlock the chains and are GREATLY rewarded!  Way better then gold!!",
-		"questLoseResult" : "You fall through a trap are attacked by alligators.  You'd be luck to survive...  You don't!",
+		"questObjective" : "Some text",
+		"questWinResult" : "Some text",
+		"questLoseResult" : "Some text",
 		"questXp" : 500,
 		"questGold" : 1000,
 		"chanceOfDamage" : 100
-	},
+	}
 };
 
 //document.getElementById("run").innerHTML
@@ -201,59 +201,30 @@ var fightingQuestLine = [];
 var exploreQuestLine = [];
 
 questArray();
-getUser();
+
 function getUser(){
 	let userName = prompt("Enter a username: ");
 	let user = new Player();
 	
 	setName.call(user, userName);
+	return user;
 }
-function choosePath(choice, decision, user){
+function choosePath(choice, user){
 	if (choice == "cowboy"){
-		document.getElementById("classDescription").innerHTML = cowboy.description;
-		switch(decision){
-			case "continue":
-			Object.assign(new cowboy(user));
-			chooseQuest();
-			break;
-			
-			case "no":
-			window.history.back();
-			break;
-		}
+		chooseQuest();
 	}
 	else if (choice == "ninja"){
-		document.getElementById("classDescription").innerHTML = ninja.description;
-		switch(decision){
-			case "continue":
-			Object.assign(new ninja(user));
-			chooseQuest();
-			break;
-			
-			case "no":
-			window.history.back();
-			break;
-		}
+		chooseQuest();
 	}
 	else if (choice == "alien"){
-		document.getElementById("classDescription").innerHTML = alien.description;
-		switch(decision){
-			case "continue":
-			Object.assign(new alien(user));
-			chooseQuest();
-			break;
-			
-			case "no":
-			window.history.back();
-			break;
-		}
+		chooseQuest(choice, user);
 	}
 }
 
-function chooseQuest(decision, questType){
+function chooseQuest(decision, questType, nextQuest, user){
 	var completedQuests = [];
-	
-	if (questType == "resources"){
+	do{
+		if (questType == "resources"){
 		for (var i=0; i < resourceQuestLine.length; i++){
 			for (var j=0; j++ < completedQuests.length; j++){
 				if (resourceQuestLine[i].id != completedQuests[j].id && resourceQuestLine[i].questClass != completedQuests[j].questClass){
@@ -262,11 +233,19 @@ function chooseQuest(decision, questType){
 					switch (decision){
 						case "continue":
 						completedQuests.push(resourceQuestLine[i]);
-						// get results from execution
+						computeQuestOutcome(resourceQuestLine[i].questWinResult, resourceQuestLine[i].questLoseResult, resourceQuestLine[i].questXp, resourceQuestLine[i].questGold, resourceQuestLine[i].chanceOfDamage, user);
+						switch (nextQuest){
+							case "continue":
+							continue;
+							
+							case "quit":
+							continueQuest = "quit";
+							break;
+						}
 						break;
 			
 						case "back":
-						chooseQuest(decision, questType);
+						window.history.back();
 						break;
 					}			
 				}else{
@@ -284,7 +263,15 @@ function chooseQuest(decision, questType){
 					switch (decision){
 						case "continue":
 						completedQuests.push(fightingQuestLine[i]);
-						// get results from execution
+						computeQuestOutcome(fightingQuestLine[i].questWinResult, fightingQuestLine[i].questLoseResult, fightingQuestLine[i].questXp, fightingQuestLine[i].questGold, fightingQuestLine[i].chanceOfDamage, user);
+						switch (nextQuest){
+							case "continue":
+							continue;
+							
+							case "quit":
+							continueQuest = "quit";
+							break;
+						}
 						break;
 						
 						case "back":
@@ -306,7 +293,15 @@ function chooseQuest(decision, questType){
 					switch (decision){
 						case "continue":
 						completedQuests.push(exploreQuestLine[i]);
-						// get results from execution
+						computeQuestOutcome(exploreQuestLine[i].questWinResult, exploreQuestLine[i].questLoseResult, exploreQuestLine[i].questXp, exploreQuestLine[i].questGold, exploreQuestLine[i].chanceOfDamage, user);
+						switch (nextQuest){
+							case "continue":
+							continue;
+							
+							case "quit":
+							continueQuest = "quit";
+							break;
+						}
 						break;
 						
 						case "back":
@@ -317,8 +312,42 @@ function chooseQuest(decision, questType){
 					return undefined;
 				}
 			}
+		}checkIfAlive();
+	}
+	}while(checkIfAlive() = false);
+	document.getElementById("Gameover").innerHTML = (user.name + " Score: \n\n" + user.getScore);
+}
+
+function computeQuestOutcome(questWinResult, questLoseResult, questXp, questGold, chanceOfDamage, user){
+	var battleType = Math.floor((Math.random()*100)+1);
+	if (battleType <= 50){
+		if (chanceOfDamage <= user.getShortRange){
+			document.getElementById("questResult").innerHTML = questWinResult;
+			user.getGold(questGold);
+			user.getExperiencePoints(questXp);
+		}else{
+			document.getElementById("questResult").innerHTML = questLoseResult;
+			user.getExperiencePoints(questXp/2);
 		}
 	}
+	else if (battleType > 50){
+		if (chanceOfDamage <= user.getLongRange){
+			document.getElementById("questResult").innerHTML = questWinResult;
+			user.getGold(questGold);
+			user.getExperiencePoints(questXp);
+		}else{
+			document.getElementById("questResult").innerHTML = questLoseResult;
+			user.getExperiencePoints(questXp/2);
+		}
+	}
+}
+
+function checkIfAlive(){
+	this.isAlive = true
+		if (user.getHealth() <= 0){
+			this.isAlive = false;
+		}
+	return this.isAlive;
 }
 
 function Player(){
@@ -400,8 +429,9 @@ function setRangesForNinja(shortRange, longRange){
 }
 // Classes
 function cowboy(user){
+	user = getUser();
 	this.name = "Cowboy";
-	this.description = ("Cowboy description \n\nAttributes: \n-5 to short range \n+10 to long range");
+	this.description = ("A cowboy's weapon of choice is a six-shoter and has an outstanding long range shot");
 	var shortRange = 5;
 	var longRange = 10;
 	
@@ -411,8 +441,14 @@ function cowboy(user){
 }
 
 function ninja(user){
+	user = getUser();
 	this.name = "Ninja";
+<<<<<<< HEAD
 	this.description = "Ninja description \n\nAttributes: \n+10 to short range \n-5 to long range";
+	user.addShortRange(10);
+	user.depleteLongRange(5);
+=======
+	this.description = "A ninja is a mercenary, highly trained in martial arts and stealth (ninjutsu) it's advantage is in short range attacks.  You won't know what hit you.";
 
 	//user.addShortRange(10);
 	//user.depleteLongRange(5);	
@@ -423,13 +459,16 @@ function ninja(user){
 	
 	var setRanges = setRangesForNinja.bind(user);
 	setRanges(shortRange, longRange);
+>>>>>>> origin/master
 	
 	choosePath("ninja");
+
 }
 
 function alien(user){
+	user = getUser();
 	this.name = "Alien";
-	this.description = "Alien description \n\nAttributes: \n+10 to player health";
+	this.description = "Alien's are physically imposing.  They stand 8' tall and weigh 375 lbs.  Their weapon of choice is the probe.  They are very hard to kill!";
 	user.addHealth(10);
 	
 	choosePath("alien");
@@ -477,7 +516,7 @@ function retrieveSubClass(user){
 
 function samaruai(user){
 	this.name = "Samaruai";
-	this.description = "Samaruai description \n\nAttributes: \n-10 to short range \n+10 to long range";
+	this.description = "Samurai are fearsome warriors who are experts in jujitsu, kendo and archery.";
 	
 	user.depleteShortRange(10);
 	user.addLongRange(10);
@@ -485,42 +524,42 @@ function samaruai(user){
 
 function shinobi(user){
 	this.name = "Shinobi";
-	this.description = "Shinobi description \n\nAttributes: \n+10 to short range \n-10 to long range";
+	this.description = "Shinobi are super ninja's they are experts in espionage, sabotage, infiltration, assassination and guerrilla warfare";
 	user.addShortRange(10);
 	user.depleteLongRange(10);
 }
 
 function gunslinger(user){
 	this.name = "Gunslinger";
-	this.description = "Gunslinger description \n\nAttributes: \n-10 to short range \n+10 to long range";
+	this.description = "Gunslingers are flashy and confident New Age warriors that rely on a wide array of guns and powerful skills to deal as much damage as possible in a short amount of time to their enemies. ";
 	user.depleteShortRange(10);
 	user.addLongRange(10);
 }
 
 function brawler(user){
 	this.name = "Brawler";
-	this.description = "Brawler description \n\nAttributes: \n+10 to short range \n-10 to long range";
+	this.description = "Brawler's are excellent at hand to hand combat and they have big knockout power!";
 	user.addShortRange(10);
 	user.depleteLongRange(10);
 }
 
 function wookie(user){
 	this.name = "Wookie";
-	this.description = "Wookie description \n\nAttributes: \n-10 to short range \n+10 to long range";
+	this.description = "Wookie's are a species of intelligent bipeds from the planet Kashyyyk.  They possess enormous strength and are armed with laser blasters";
 	user.depleteShortRange(10);
 	user.addLongRange(10);
 }
 
 function luggabeast(user){
 	this.name = "LuggaBeast"
-	this.description = "Luggabeast description \n\nAttributes: \n+10 to short range \n-10 to long range";
+	this.description = "Luggabeast are more machine than beast, this alien creature's pedigree is lost somewhere underneath all of those implants and armor. They stand 9' tall and weight 1.5 tons";
 	user.addShortRange(10);
 	user.depleteShortRange(10);
 }
 // Long Range Weapons
 function revolver(user){
 	this.name = "Revolver";
-	this.description = "Revolover description \n\nAttributes: \n+5 to long range \n-5 to short range";
+	this.description = "A pistol with revolving chambers enabling several shots to be fired without reloading";
 	this.equip = function(){
 		Object.assign(user);
 	};
@@ -530,7 +569,7 @@ function revolver(user){
 
 function rifle(user){
 	this.name = "Rifle";
-	this.description = "Rifle description \n\nAttributes: \n+10 to long range \n-10 to short range";
+	this.description = "A gun, especially one fired from shoulder level, having a long spirally grooved barrel intended to make a bullet spin and thereby have greater accuracy over a long distance.";
 	this.equip = function(){
 		Object.assign(user);
 	};
@@ -540,7 +579,7 @@ function rifle(user){
 
 function shuriken(user){
 	this.name = "Shuriken";
-	this.description = "Shuriken description \n\nAttributes: \n+10 to long range \n-10 to short range";
+	this.description = "A weapon in the form of a star with projecting blades or points, used as a missile in some martial arts.";
 	this.equip = function(){
 		Object.assign(user);
 	};
@@ -550,7 +589,7 @@ function shuriken(user){
 
 function bowAndArrow(user){
 	this.name = "Bow and Arrow";
-	this.description = "Bow and Arrow description \n\nAttributes: \n+5 to long range \n-5 to short range";
+	this.description = "A weapon consisting of arrows and the bow to shoot them. arrow - a projectile with a straight thin shaft and an arrowhead on one end";
 	this.equip = function(){
 		Object.assign(user);
 	};
@@ -560,7 +599,7 @@ function bowAndArrow(user){
 
 function rayGun(user){
 	this.name = "Ray Gun";
-	this.description = "Ray gun description \n\nAttributes: \n+5 to long range \n-5 to short range";
+	this.description = "A gun causing injury or damage by the emission of rays.";
 	this.equip = function(){
 		Object.assign(user);
 	};
@@ -570,7 +609,7 @@ function rayGun(user){
 
 function plasmaRifle(user){
 	this.name = "Plasma Rifle";
-	this.description = "Plasma rifle description \n\nAttributes: \n+10 to long range \n-10 to short range";
+	this.description = "A plasma weapon is a type of raygun that fires a stream, bolt(s), pulse or toroid of plasma";
 	this.equip = function(){
 		Object.assign(user);
 	};
@@ -580,7 +619,7 @@ function plasmaRifle(user){
 // Short Range Weapons
 function bowieKnife(user){
 	this.name = "Bowie Knife";
-	this.description = "Bowie Knife description \n\nAttributes: \n+5 to short range \n-5 to long range";
+	this.description = "A long knife with a blade double-edged at the point.";
 	this.equip = function(){
 		Object.assign(user);
 	};
@@ -590,7 +629,7 @@ function bowieKnife(user){
 
 function sword(user){
 	this.name = "Sword";
-	this.description = "Sword description \n\nAttributes: \n+10 to short range \n-10 to long range";
+	this.description = "A weapon with a long metal blade and a hilt with a hand guard, used for thrusting or striking";
 	this.equip = function(){
 		Object.assign(user);
 	};
@@ -600,7 +639,7 @@ function sword(user){
 
 function katana(user){
 	this.name = "Katana";
-	this.description = "Katana description \n\nAttributes: \n+10 to short range \n-10 to long range";
+	this.description = "The katana is a sword characterized by its distinctive appearance: a curved, slender, single-edged blade with a circular or squared guard and long grip to accommodate two hand";
 	this.equip = function(){
 		Object.assign(user);
 	};
@@ -610,7 +649,7 @@ function katana(user){
 
 function wakizashi(user){
 	this.name = "Wakizashi";
-	this.description = "Wakizashi description \n\nAttributes: \n+10 to short range \n-10 to long range";
+	this.description = "A Japanese sword shorter than a katana.  The wakizashi being worn together with the katana was the official sign that the wearer was a samurai or swordsman of feudal Japan";
 	this.equip = function(){
 		Object.assign(user);
 	};
@@ -620,7 +659,7 @@ function wakizashi(user){
 
 function electron(user){
 	this.name = "Electron";
-	this.description = "Electron description \n\nAttributes: \n+5 to short range \n-5 to long range";
+	this.description = "Electron is an energy pulse weapons that disables it's victims on a sub-atomic level";
 	this.equip = function(){
 		Object.assign(user);
 	};
@@ -630,7 +669,7 @@ function electron(user){
 
 function probe(user){
 	this.name = "Probe";
-	this.description = "Probe description \n\nAttributes: \n+10 to short range \n-10 to long range";
+	this.description = "The 'A' probe is an alien's weapon of choice.  Once inserted in the victim, the victim will never regain 100% health";
 	this.equip = function(){
 		Object.assign(user);
 	};
@@ -714,13 +753,13 @@ function Quest(id, questClass, questName, questObjective, questWinResult, questL
 	this.chanceOfDamage = chanceOfDamage;
 }
 
-function displayPlayerInformation(){
-	document.getElementById("username").innerHTML = ("Warrior name: \n\n" + user.getName);
-	document.getElementById("health").innerHTML = ("Health: \n\n" + user.getHealth);
-	document.getElementById("gold").innerHTML = ("Gold: \n\n" + user.getGold);
-	document.getElementById("xp").innerHTML = ("XP: \n\n" + user.getExperiencePoints);
-	document.getElementById("shortRange").innerHTML = ("Short Range: \n\n" + user.getShortRange);
-	document.getElementById("longRange").innerHTML = ("Long Range: \n\n" + user.getLongRange);
+function displayPlayerInformation(user){
+	document.getElementById("playerName").innerHTML = (user.getName);
+	document.getElementById("playerHealth").innerHTML = (user.getHealth);
+	document.getElementById("playerGold").innerHTML = (user.getGold);
+	document.getElementById("playerXp").innerHTML = (user.getExperiencePoints);
+	document.getElementById("playerShortRange").innerHTML = (user.getShortRange);
+	document.getElementById("playerLongRange").innerHTML = (user.getLongRange);
 }
 
 function startQuest(){
@@ -752,6 +791,6 @@ function displayExploreQuest(){
 	document.getElementById("exploreQuestTwo").innerHTML = exploreQuestLine.questTwo.description;
 	document.getElementById("exploreQuestThree").innerHTML = exploreQuestLine.questThree.description;
 	document.getElementById("exploreQuestFour").innerHTML = exploreQuestLine.questFour.description;
-	document.getElementById("exploreQuestFive").innerHTML = exploreQuestLine.questFive.description;
+	doucment.getElementById("exploreQuestFive").innerHTML = exploreQuestLine.questFive.description;
 	document.getElementById("exploreQuestSix").innerHTML = exploreQuestLine.questSix.description;
 }
