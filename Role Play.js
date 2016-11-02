@@ -427,11 +427,8 @@ function setRangesForNinja(shortRange, longRange){
 function cowboy(user){
 	user = getUser();
 	this.name = "Cowboy";
-<<<<<<< HEAD
 	this.description = ("A cowboy's weapon of choice is a six-shoter and has an outstanding long range shot\n\nAttributes: \n-5 to short range \n+10 to long range");
-=======
-	this.description = ("A cowboy's weapon of choice is a six-shoter and has an outstanding long range shot \n\nAttributes: \n+10 to short range \n-5 to long range");
->>>>>>> 469f3b40380262e7b6978b8dd5abb1160ca6487a
+
 	var shortRange = 5;
 	var longRange = 10;
 	
@@ -443,16 +440,8 @@ function cowboy(user){
 function ninja(user){
 	user = getUser();
 	this.name = "Ninja";
-<<<<<<< HEAD
-<<<<<<< HEAD
 	this.description = "Ninja description \n\nAttributes: \n+10 to short range \n-5 to long range";
-	user.addShortRange(10);
-	user.depleteLongRange(5);
-=======
 	this.description = "A ninja is a mercenary, highly trained in martial arts and stealth (ninjutsu) it's advantage is in short range attacks.  You won't know what hit you.\n\nAttributes: \n+10 to short range \n-5 to long range";
-=======
-	this.description = "A ninja is a mercenary, highly trained in martial arts and stealth (ninjutsu) it's advantage is in short range attacks.  You won't know what hit you. \n\nAttributes: \n+10 to short range \n-5 to long range";
->>>>>>> 469f3b40380262e7b6978b8dd5abb1160ca6487a
 
 	//user.addShortRange(10);
 	//user.depleteLongRange(5);	
