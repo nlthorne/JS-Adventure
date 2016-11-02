@@ -8,7 +8,7 @@ var resourceQuests = {
 	"questOne" : {
 		"questClass": "Resource",
 		"questName": "Gather food",
-		"questObjective": "Some text",
+		"questObjective": "Increase experience points and gold at a low risk to user",
 		"questResult": "Some text",
 		"questXp": 50,
 		"questGold": 20,
@@ -17,7 +17,7 @@ var resourceQuests = {
 	"questTwo" : {
 		"questClass": "Resource",
 		"questName": "Gather water",
-		"questObjective": "Some text",
+		"questObjective": "Increase experience points and gold at a low risk to user",
 		"questResult": "Some text",
 		"questXp": 75,
 		"questGold": 35,
@@ -26,7 +26,7 @@ var resourceQuests = {
 	"questThree" : {
 		"questClass": "Resource",
 		"questName": "Gather wood",
-		"questObjective": "Some text",
+		"questObjective": "Increase experience points and gold at a low risk to user",
 		"questResult": "Some text",
 		"questXp": 100,
 		"questGold": 50,
@@ -35,7 +35,7 @@ var resourceQuests = {
 	"questFour" : {
 		"questClass": "Resource",
 		"questName": "Build weapon",
-		"questObjective": "Some text",
+		"questObjective": "Increase experience points and gold at a low risk to user",
 		"questResult": "Some text",
 		"questXp": 125,
 		"questGold": 75,
@@ -44,7 +44,7 @@ var resourceQuests = {
 	"questFive" : {
 		"questClass": "Resource",
 		"questName": "Gather information",
-		"questObjective": "Some text",
+		"questObjective": "Increase experience points and gold at a low risk to user",
 		"questResult": "Some text",
 		"questXp": 200,
 		"questGold": 150,
@@ -53,7 +53,7 @@ var resourceQuests = {
 	"questSix" : {
 		"questClass": "Resource",
 		"questName": "Final Plan",
-		"questObjective": "Some text",
+		"questObjective": "Increase experience points and gold at a low risk to user",
 		"questResult": "Some text",
 		"questXp": 350,
 		"questGold": 275,
@@ -65,7 +65,7 @@ var fightingQuests = {
 	"questOne" : {
 		"questClass": "Fighting",
 		"questName" : "The training begins...",
-		"questObjective" : "Some text",
+		"questObjective" : "Increase experience points and gold at a high risk to user with increased results",
 		"questResult" : "Some text",
 		"questXp" : 50,
 		"questGold" : 50,
@@ -74,7 +74,7 @@ var fightingQuests = {
 	"questTwo" : {
 		"questClass": "Fighting",
 		"questName" : "Kill the boar!",
-		"questObjective" : "Some text",
+		"questObjective" : "Increase experience points and gold at a high risk to user with increased results",
 		"questResult" : "Some text",
 		"questXp" : 75,
 		"questGold" : 75,
@@ -83,7 +83,7 @@ var fightingQuests = {
 	"questThree" : {
 		"questClass": "Fighting",
 		"questName" : "A new opponent arrives",
-		"questObjective" : "Some text",
+		"questObjective" : "Increase experience points and gold at a high risk to user with increased results",
 		"questResult" : "Some text",
 		"questXp" : 100,
 		"questGold" : 150,
@@ -92,7 +92,7 @@ var fightingQuests = {
 	"questFour" : {
 		"questClass": "Fighting",
 		"questName" : "Get to the choppa!",
-		"questObjective" : "Some text",
+		"questObjective" : "Increase experience points and gold at a high risk to user with increased results",
 		"questResult" : "Some text",
 		"questXp" : 150,
 		"questGold" : 250,
@@ -101,7 +101,7 @@ var fightingQuests = {
 	"questFive" : {
 		"questClass": "Fighting",
 		"questName" : "Take out the paparazzi...",
-		"questObjective" : "Some text",
+		"questObjective" : "Increase experience points and gold at a high risk to user with increased results",
 		"questResult" : "Some text",
 		"questXp" : 300,
 		"questGold" : 500,
@@ -110,7 +110,7 @@ var fightingQuests = {
 	"questSix" : {
 		"questClass": "Fighting",
 		"questName" : "Free the country!",
-		"questObjective" : "Some text",
+		"questObjective" : "Increase experience points and gold at a high risk to user with increased results",
 		"questResult" : "Some text",
 		"questXp" : 500,
 		"questGold" : 1000,
@@ -122,7 +122,7 @@ var exploreQuests = {
 	"questOne" : {
 		"questClass": "Explore",
 		"questName" : "What's over there?",
-		"questObjective" : "Some text",
+		"questObjective" : "Increase experience points and gold at a high risk to user with increased results",
 		"questResult" : "Some text",
 		"questXp" : 500,
 		"questGold" : 1000,
@@ -131,7 +131,7 @@ var exploreQuests = {
 	"questTwo" : {
 		"questClass": "Explore",
 		"questName" : "Ain't nobody got time for dat!",
-		"questObjective" : "Some text",
+		"questObjective" : "Increase experience points and gold at a high risk to user with increased results",
 		"questResult" : "Some text",
 		"questXp" : 500,
 		"questGold" : 1000,
@@ -140,7 +140,7 @@ var exploreQuests = {
 	"questThree" : {
 		"questClass": "Explore",
 		"questName" : "What's in the box!",
-		"questObjective" : "Some text",
+		"questObjective" : "Increase experience points and gold at a high risk to user with increased results",
 		"questResult" : "Some text",
 		"questXp" : 500,
 		"questGold" : 1000,
@@ -149,7 +149,7 @@ var exploreQuests = {
 	"questFour" : {
 		"questClass": "Explore",
 		"questName" : "Is... is that what I think it is?",
-		"questObjective" : "Some text",
+		"questObjective" : "Increase experience points and gold at a high risk to user with increased results",
 		"questResult" : "Some text",
 		"questXp" : 500,
 		"questGold" : 1000,
@@ -158,7 +158,7 @@ var exploreQuests = {
 	"questFive" : {
 		"questClass": "Explore",
 		"questName" : "Oh, a secret passage",
-		"questObjective" : "Some text",
+		"questObjective" : "Increase experience points and gold at a high risk to user with increased results",
 		"questResult" : "Some text",
 		"questXp" : 500,
 		"questGold" : 1000,
@@ -167,7 +167,7 @@ var exploreQuests = {
 	"questSix" : {
 		"questClass": "Explore",
 		"questName" : "Infiltrate the facility.",
-		"questObjective" : "Some text",
+		"questObjective" : "Increase experience points and gold at a high risk to user with increased results",
 		"questResult" : "Some text",
 		"questXp" : 500,
 		"questGold" : 1000,
@@ -290,6 +290,7 @@ function cowboy(user){
 	this.description = ("Cowboy description \n\nAttributes: \n-5 to short range \n+10 to long range");
 	user.depleteShortRange(5);
 	user.addLongRange(10);
+	
 }
 
 function ninja(user){
@@ -360,6 +361,7 @@ function retrieveSubClass(user){
 function samaruai(user){
 	this.name = "Samaruai";
 	this.description = "Samaruai description \n\nAttributes: \n-10 to short range \n+10 to long range";
+	
 	user.depleteShortRange(10);
 	user.addLongRange(10);
 }
