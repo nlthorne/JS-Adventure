@@ -299,7 +299,7 @@ function Player(){
 	this.getHealth = function(){
 		return healthPoints;
 	};
-	this.getexperiencePoints = function(){
+	this.getExperiencePoints = function(){
 		return experiencePoints;
 	};
 	this.getShortRange = function(){
@@ -348,20 +348,7 @@ function alien(user){
 	user.addHealth(10);
 }
 
-function storyline(player1){
-	var availableQuests = [];
-	for(var i=0; i < quests.length; i++){
-		if(quests[i].questClass == "Fighting"){
-			return quests[i];
-		}
-		else if (quests[i].questClass == "Resources"){
-			return quests[i];
-		}
-	}
-	alert(quests[0].questXp);
-}
-
-function chooseQuest(quest, questNumber){
+function chooseQuest(quest, questOption){
 	if (questOption == "resources"){
 		
 	}
@@ -660,4 +647,46 @@ function Quest(id, questClass, questName, questObjective, questWinResult, questL
 	this.questXp = questXp;
 	this.questGold = questGold;
 	this.chanceOfDamage = chanceOfDamage;
+}
+
+function displayPlayerInformation(){
+	document.getElementById("username").innerHTML = ("Warrior name: \n\n" + user.getName);
+	document.getElementById("health").innerHTML = ("Health: \n\n" + user.getHealth);
+	document.getElementById("gold").innerHTML = ("Gold: \n\n" + user.getGold);
+	document.getElementById("xp").innerHTML = ("XP: \n\n" + user.getExperiencePoints);
+	document.getElementById("shortRange").innerHTML = ("Short Range: \n\n" + user.getShortRange);
+	document.getElementById("longRange").innerHTML = ("Long Range: \n\n" + user.getLongRange);
+}
+
+function startQuest(){
+	document.getElementById("resources").style.display = "none";
+	document.getElementById("fighting").style.display = "none";
+	document.getElementById("explore").style.display = "none";
+}
+
+function displayResourceQuest(){
+	document.getElementById("resourceQuestOne").innerHTML = resourceQuestLine.questOne.description;
+	document.getElementById("resourceQuestTwo").innerHTML = resourceQuestLine.questTwo.description;
+	document.getElementById("resourceQuestThree").innerHTML = resourceQuestLine.questThree.description;
+	document.getElementById("resourceQuestFour").innerHTML = resourceQuestLine.questFour.description;
+	document.getElementById("resourceQuestFive").innerHTML = resourceQuestLine.questFive.description;
+	document.getElementById("resourceQuestSix").innerHTML = resourceQuestLine.questFive.description;
+}
+
+function displayFightingQuest(){
+	document.getElementById("fightingQuestOne").innerHTML = fightingQuestLine.questOne.description;
+	document.getElementById("fightingQuestTwo").innerHTML = fightingQuestLine.questTwo.description;
+	document.getElementById("fightingQuestThree").innerHTML = fightingQuestLine.questThree.description;
+	document.getElementById("fightingQuestFour").innerHTML = fightingQuestLine.questFour.description;
+	document.getElementById("fightingQuestFive").innerHTML = fightingQuestLine.questFive.description;
+	document.getElementById("fightingQuestSix").innerHTML = fightingQuestLine.questSix.description;
+}
+
+function displayExploreQuest(){
+	document.getElementById("exploreQuestOne").innerHTML = exploreQuestLine.questOne.description;
+	document.getElementById("exploreQuestTwo").innerHTML = exploreQuestLine.questTwo.description;
+	document.getElementById("exploreQuestThree").innerHTML = exploreQuestLine.questThree.description;
+	document.getElementById("exploreQuestFour").innerHTML = exploreQuestLine.questFour.description;
+	doucment.getElementById("exploreQuestFive").innerHTML = exploreQuestLine.questFive.description;
+	document.getElementById("exploreQuestSix").innerHTML = exploreQuestLine.questSix.description;
 }
